@@ -6,12 +6,14 @@ function App() {
 
   return (
     <>
+<div className='flex'>
     <Sidebar />
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<ParentPage />} />
       </Routes>
     </BrowserRouter>
+</div>
     </>
   )
 }
