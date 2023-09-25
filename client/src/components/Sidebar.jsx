@@ -2,7 +2,7 @@ import React from 'react'
 
 function Sidebar() {
     return (
-        <div className=''>
+        <div className='p-12'>
             Sidebar
         </div>
     )
