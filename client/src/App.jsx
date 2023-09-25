@@ -6,8 +6,8 @@ function App() {
 
   return (
     <>
-<div className='flex'>
-    <Sidebar />
+<div className='flex justify-between'>
+    <Sidebar className='fixed' />
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<ParentPage />} />
