@@ -10,7 +10,7 @@ function ParentPage() {
   const theme = isLightTheme ? light : dark
 
   return (
-    <div className='lg:flex justify-between'>
+    <div className='lg:flex justify-between'  style={{ background: theme.bg, color: theme.syntax }}>
       <div className='absolute top-[10px] right-[10px]'>
         <div className="lg:hidden">
           <div className={sidebar ? 'hidden' : 'block'} onClick={() => setSidebar(true)}>
@@ -24,7 +24,7 @@ function ParentPage() {
           <ToggleTheme />
         </div>
       </div>
-      <div className={sidebar ? '' : 'hidden lg:block'}>
+      <div className={sidebar ? '' : 'hidden lg:block'} >
         <Sidebar />
       </div>
       <div className="p-12 w-[350px] lg:w-[900px]">
