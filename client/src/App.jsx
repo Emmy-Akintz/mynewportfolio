@@ -1,19 +1,18 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ParentPage from './pages/ParentPage'
-import Sidebar from './components/Sidebar'
+import ThemeContextProvider from './contexts/ThemeContext'
 
 function App() {
 
   return (
     <>
-<div className='flex justify-between'>
-    <Sidebar className='' />
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<ParentPage />} />
-      </Routes>
-    </BrowserRouter>
-</div>
+      <ThemeContextProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<ParentPage />} />
+          </Routes>
+        </BrowserRouter>
+      </ThemeContextProvider>
     </>
   )
 }
