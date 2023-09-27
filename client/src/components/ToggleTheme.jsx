@@ -5,10 +5,17 @@ import { ThemeContext } from '../contexts/ThemeContext'
 function ToggleTheme() {
     const { toggleTheme, isLightTheme, light, dark } = useContext(ThemeContext)
     const theme = isLightTheme ? light : dark
+    const changeTheme = () => {
+        if ( isLightTheme ) {
+            toggleTheme(false)
+        } else {
+            toggleTheme(true)
+        }
+    }
     return (
-        <button className='p-4' onClick={toggleTheme}>
-            <div className=''><MdDarkMode /></div>
-            <div className='hidden'><MdLightMode /></div>
+        <button className='p-4' onClick={changeTheme}>
+            <div className={isLightTheme ? '' : 'hidden'}><MdDarkMode /></div>
+            <div className={isLightTheme ? 'hidden' : ''}><MdLightMode /></div>
         </button>
     )
 }
