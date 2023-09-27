@@ -12,6 +12,10 @@ function Sidebar() {
             </div>
             <br />
             <h1 className='font-bold text-2xl'>Ayomide Akintan</h1>
+            <p className="">
+                <span className="" style={{ color: theme.ui }}>WEB DEVELOPER </span>
+                IN NIGERIA
+            </p>
         </div>
     )
 }
