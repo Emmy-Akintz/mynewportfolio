@@ -12,7 +12,7 @@ function ParentPage() {
   return (
     <div className='lg:flex justify-between'  style={{ background: theme.bg, color: theme.syntax }}>
       <div className='absolute top-[10px] right-[10px]'>
-        <div className="lg:hidden">
+        <div className="lg:hidden p-4">
           <div className={sidebar ? 'hidden' : 'block'} onClick={() => setSidebar(true)}>
             <MdMenu />
           </div>

@@ -6,7 +6,7 @@ function ToggleTheme() {
     const { toggleTheme, isLightTheme, light, dark } = useContext(ThemeContext)
     const theme = isLightTheme ? light : dark
     return (
-        <button className='' onClick={toggleTheme}>
+        <button className='p-4' onClick={toggleTheme}>
             <div className=''><MdDarkMode /></div>
             <div className='hidden'><MdLightMode /></div>
         </button>
