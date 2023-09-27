@@ -14,7 +14,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+/* sidebar */
 .Sidebar div.image {
   border-radius: 50%;
   overflow: hidden;
 }
+
+/* intro */
