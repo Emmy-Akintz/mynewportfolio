@@ -16,6 +16,19 @@ function Sidebar() {
                 <span className="" style={{ color: theme.ui }}>WEB DEVELOPER </span>
                 IN NIGERIA
             </p>
+            <ul className='mt-4'>
+                <li className='text-sm mt-1'>HOME</li>
+                <li className='text-sm mt-1'>ABOUT</li>
+                <li className='text-sm mt-1'>SERVICES</li>
+                <li className='text-sm mt-1'>SKILLS</li>
+                <li className='text-sm mt-1'>EDUCATION</li>
+                <li className='text-sm mt-1'>EXPERIENCE</li>
+                <li className='text-sm mt-1'>WORK</li>
+                <li className='text-sm mt-1'>BLOG</li>
+                <li className='text-sm mt-1'>CONTACT</li>
+            </ul>
+            <p className="text-sm mt-4">&copy; Copyright 2023.</p>
+            <p className="text-sm">All rights reserved.</p>
         </div>
     )
 }
