@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react'
 import Sidebar from '../components/Sidebar'
-import ToggleTheme from '../components/toggleTheme'
 import { MdMenu, MdCancel } from 'react-icons/md'
 import { ThemeContext } from '../contexts/ThemeContext'
+import ToggleTheme from '../components/ToggleTheme'
 
 function ParentPage() {
   const [sidebar, setSidebar] = useState(false)

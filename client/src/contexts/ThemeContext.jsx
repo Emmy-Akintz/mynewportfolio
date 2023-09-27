@@ -9,11 +9,11 @@ const ThemeContextProvider = (props) => {
         dark: { syntax: '#d3d3d3', ui: '#ff5722', bg: '#121212', bgg: '#1e1e1e'}
     })
     const toggleTheme = () => {
-        setLightTheme({ isLightTheme: !isLightTheme })
+        setLightTheme({ isLightTheme: !this.isLightTheme })
     }
     return ( 
-        <ThemeContext.Provider value={{ lightTheme, toggleTheme }}>
-            {props.children}
+        <ThemeContext.Provider value={{ ...this.lightTheme, toggleTheme }}>
+            { props.children }
         </ThemeContext.Provider>
      );
 }
