@@ -4,6 +4,7 @@ import { MdMenu, MdCancel } from 'react-icons/md'
 import { ThemeContext } from '../contexts/ThemeContext'
 import ToggleTheme from '../components/ToggleTheme'
 import Intro from './Intro'
+import About from './About'
 
 function ParentPage() {
   const [sidebar, setSidebar] = useState(false)
@@ -30,6 +31,7 @@ function ParentPage() {
       </div>
       <div className="p-12 w-[350px] lg:w-[900px]">
         <Intro />
+        <About />
       </div>
     </div>
   )
