@@ -13,16 +13,16 @@ function ParentPage() {
 
   return (
     <div className='lg:flex justify-between' style={{ background: theme.bg, color: theme.syntax }}>
-      <div className='absolute top-[10px] right-[10px]'>
+      <div className='fixed top-[10px] right-[10px]'>
         <div className="lg:hidden p-4">
-          <div className={sidebar ? 'hidden' : 'block fixed'} onClick={() => setSidebar(true)}>
+          <div className={sidebar ? 'hidden' : 'block'} onClick={() => setSidebar(true)}>
             <MdMenu />
           </div>
-          <div className={sidebar ? 'block fixed' : 'hidden'} onClick={() => setSidebar(false)}>
+          <div className={sidebar ? 'block' : 'hidden'} onClick={() => setSidebar(false)}>
             <MdCancel />
           </div>
         </div>
-        <div className="fixed">
+        <div className="">
           <ToggleTheme />
         </div>
       </div>
