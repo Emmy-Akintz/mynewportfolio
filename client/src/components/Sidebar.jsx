@@ -28,7 +28,7 @@ function Sidebar() {
                 <li className='text-sm mt-1'>CONTACT</li>
             </ul>
             <p className="text-sm mt-4">&copy; Copyright 2023.</p>
-            <p className="text-sm">All rights reserved.</p>
+            <p className="text-sm mb-10">All rights reserved.</p>
         </div>
     )
 }
