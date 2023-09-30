@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { IconContext } from 'react-icons'
-import { BsCodeSlash } from 'react-icons/bs'
+import { MdOutlineDeveloperMode } from 'react-icons/md'
 import { ThemeContext } from '../contexts/ThemeContext'
 
 function About() {
@@ -14,7 +14,7 @@ function About() {
         <div className="card p-5 mt-5 w-[300px]" style={{ borderBottom: `3px solid ${theme.ui}`, boxShadow: `0px -20px 50px 20px ${theme.bgg}` }}>
           <div className="">
 <IconContext.Provider value={{ color: theme.ui }}>
-            <BsCodeSlash />
+            <MdOutlineDeveloperMode />
 </IconContext.Provider>
           </div>
           <p className="mt-4">
