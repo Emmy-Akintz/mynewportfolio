@@ -4,7 +4,7 @@ import { ThemeContext } from '../contexts/ThemeContext'
 
 function About() {
     const { isLightTheme, light, dark } = useContext(ThemeContext)
-    const theme = isLightTheme ? light : dark2
+    const theme = isLightTheme ? light : dark
   return (
     <div className='About'>
         <h1 className="">ABOUT US</h1>
