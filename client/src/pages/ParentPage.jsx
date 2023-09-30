@@ -32,6 +32,7 @@ function ParentPage() {
       <div className="p-12 w-[350px] lg:w-[900px]">
         <Intro />
         <About />
+<div>under construction 🚧... to be completed soon!</div>
       </div>
     </div>
   )
