@@ -23,7 +23,7 @@ function About() {
       </div>
       <br />
       <br />
-      <div className="p-12 bg-yellow-300 text-black w-[300px] lg:w-[700px]">
+      <div className="p-12 bg-yellow-700 text-black w-[300px] lg:w-[700px]">
         <p className='font-bold'>I am happy to let you know <br /> that I've done 10 projects successfully!</p>
         <br />
         <button className='border border-black px-2'>HIRE ME</button>
