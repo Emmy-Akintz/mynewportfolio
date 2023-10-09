@@ -5,6 +5,8 @@ import { ThemeContext } from '../contexts/ThemeContext'
 import ToggleTheme from '../components/ToggleTheme'
 import Intro from './Intro'
 import About from './About'
+import Services from './Services'
+import Skills from './Skills'
 
 function ParentPage() {
   const [sidebar, setSidebar] = useState(false)
@@ -32,7 +34,9 @@ function ParentPage() {
       <div className="p-12 w-[350px] lg:w-[900px]">
         <Intro />
         <About />
-<div>under construction 🚧... to be completed soon!</div>
+        <Services />
+        <Skills />
+        <div className='mt-12'>under construction 🚧... to be completed soon!</div>
       </div>
     </div>
   )
