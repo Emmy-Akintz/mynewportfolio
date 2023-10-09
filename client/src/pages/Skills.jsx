@@ -36,19 +36,19 @@ function Skills() {
                 <div className="block w-[280px] my-4">
                     <div className="flex justify-between">
                         <p className="">Javascript</p>
-                        <p className="">90%</p>
+                        <p className="">75%</p>
                     </div>
                     <div className="w-[100%] h-[10px] rounded-2xl overflow-hidden" style={{ background: theme.bgg }}>
-                        <div className="w-[90%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
+                        <div className="w-[75%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
                     </div>
                 </div>
                 <div className="block w-[280px] my-4">
                     <div className="flex justify-between">
                         <p className="">Typescript</p>
-                        <p className="">90%</p>
+                        <p className="">0%</p>
                     </div>
                     <div className="w-[100%] h-[10px] rounded-2xl overflow-hidden" style={{ background: theme.bgg }}>
-                        <div className="w-[90%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
+                        <div className="w-[0%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
                     </div>
                 </div>
                 <div className="block w-[280px] my-4">
@@ -72,64 +72,64 @@ function Skills() {
                 <div className="block w-[280px] my-4">
                     <div className="flex justify-between">
                         <p className="">PHP</p>
-                        <p className="">90%</p>
+                        <p className="">30%</p>
                     </div>
                     <div className="w-[100%] h-[10px] rounded-2xl overflow-hidden" style={{ background: theme.bgg }}>
-                        <div className="w-[90%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
+                        <div className="w-[30%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
                     </div>
                 </div>
                 <div className="block w-[280px] my-4">
                     <div className="flex justify-between">
                         <p className="">mySql</p>
-                        <p className="">90%</p>
+                        <p className="">30%</p>
                     </div>
                     <div className="w-[100%] h-[10px] rounded-2xl overflow-hidden" style={{ background: theme.bgg }}>
-                        <div className="w-[90%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
+                        <div className="w-[30%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
                     </div>
                 </div>
                 <div className="block w-[280px] my-4">
                     <div className="flex justify-between">
                         <p className="">MongoDB</p>
-                        <p className="">90%</p>
+                        <p className="">60%</p>
                     </div>
                     <div className="w-[100%] h-[10px] rounded-2xl overflow-hidden" style={{ background: theme.bgg }}>
-                        <div className="w-[90%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
+                        <div className="w-[60%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
                     </div>
                 </div>
                 <div className="block w-[280px] my-4">
                     <div className="flex justify-between">
                         <p className="">ExpressJS</p>
-                        <p className="">90%</p>
+                        <p className="">60%</p>
                     </div>
                     <div className="w-[100%] h-[10px] rounded-2xl overflow-hidden" style={{ background: theme.bgg }}>
-                        <div className="w-[90%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
+                        <div className="w-[60%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
                     </div>
                 </div>
                 <div className="block w-[280px] my-4">
                     <div className="flex justify-between">
                         <p className="">ReactJS</p>
-                        <p className="">90%</p>
+                        <p className="">80%</p>
                     </div>
                     <div className="w-[100%] h-[10px] rounded-2xl overflow-hidden" style={{ background: theme.bgg }}>
-                        <div className="w-[90%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
+                        <div className="w-[80%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
                     </div>
                 </div>
                 <div className="block w-[280px] my-4">
                     <div className="flex justify-between">
                         <p className="">NodeJS</p>
-                        <p className="">90%</p>
+                        <p className="">60%</p>
                     </div>
                     <div className="w-[100%] h-[10px] rounded-2xl overflow-hidden" style={{ background: theme.bgg }}>
-                        <div className="w-[90%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
+                        <div className="w-[60%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
                     </div>
                 </div>
                 <div className="block w-[280px] my-4">
                     <div className="flex justify-between">
                         <p className="">C program</p>
-                        <p className="">90%</p>
+                        <p className="">30%</p>
                     </div>
                     <div className="w-[100%] h-[10px] rounded-2xl overflow-hidden" style={{ background: theme.bgg }}>
-                        <div className="w-[90%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
+                        <div className="w-[30%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
                     </div>
                 </div>
                 {/* <div className="block w-[280px] my-4">

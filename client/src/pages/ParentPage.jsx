@@ -7,6 +7,7 @@ import Intro from './Intro'
 import About from './About'
 import Services from './Services'
 import Skills from './Skills'
+import Education from './Education'
 
 function ParentPage() {
   const [sidebar, setSidebar] = useState(false)
@@ -36,6 +37,7 @@ function ParentPage() {
         <About />
         <Services />
         <Skills />
+        <Education />
         <div className='mt-12'>under construction 🚧... to be completed soon!</div>
       </div>
     </div>
