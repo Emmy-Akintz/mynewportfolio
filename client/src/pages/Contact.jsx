@@ -16,10 +16,9 @@ function Contact() {
         setSubject('')
         setMessage('')
         setConfirm('Delivered!')
-        const timer = setTimeout(() => {
+        setTimeout(() => {
             setConfirm('')
         }, 5000)
-        return () => clearTimeout(timer)
     }
     const { isLightTheme, light, dark } = useContext(ThemeContext)
     const theme = isLightTheme ? light : dark
