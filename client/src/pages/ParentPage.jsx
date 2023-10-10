@@ -46,7 +46,6 @@ function ParentPage() {
         <Work />
         <Read />
         <Contact />
-        <div className='mt-12'>under construction 🚧... to be completed soon!</div>
       </div>
     </div>
   )
