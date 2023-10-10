@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import { BsBoxArrowInUpRight } from 'react-icons/bs'
 import { ThemeContext } from '../contexts/ThemeContext'
+import { AiOutlineComment } from 'react-icons/ai'
+import blogImage from '../assets/Emmanuel-2.jpg'
 
 function Read() {
     const { isLightTheme, light, dark } = useContext(ThemeContext)
@@ -12,8 +14,19 @@ function Read() {
             <h1 className="font-bold">RECENT BLOG</h1>
             <br />
             <div className="lg:grid lg:grid-cols-2">
-                <div className="border w-[280px] my-4 p-4">
-                    <h1 className="">
+                <div className="w-[280px] my-4 p-4">
+                    <div className="image w-[200px] rounded-[50%]">
+                        <img src={blogImage} alt="" />
+                    </div>
+                    <div className="text-sm mt-4 flex justify-between w-[70%] items-center">
+                        <p className="">APRIL 14</p>
+                        <p className="font-bold">|</p>
+                        <p className="">WEB DEV</p>
+                        <p className="font-bold">|</p>
+                        <AiOutlineComment />
+                        <p className="">4</p>
+                    </div>
+                    <h1 className="font-bold text-sm">
                         MY BLOG
                     </h1>
                     <p className="">
@@ -21,13 +34,24 @@ function Read() {
                     </p>
                     <br />
                     <div className="flex">
-                        <a className="rounded-xl px-2 py-1" href='https://github.com/Emmy-Akintz/larry-pat-foods' style={{ background: theme.ui }}>
+                        <a className="rounded-xl px-2 py-1" href='/' style={{ background: theme.ui }}>
                             <BsBoxArrowInUpRight />
                         </a>
                     </div>
                 </div>
-                <div className="border w-[280px] my-4 p-4">
-                    <h1 className="">
+                <div className="w-[280px] my-4 p-4">
+                    <div className="image w-[200px] rounded-[50%]">
+                        <img src={blogImage} alt="" />
+                    </div>
+                    <div className="text-sm mt-4 flex justify-between w-[70%] items-center">
+                        <p className="">APRIL 14</p>
+                        <p className="font-bold">|</p>
+                        <p className="">WEB DEV</p>
+                        <p className="font-bold">|</p>
+                        <AiOutlineComment />
+                        <p className="">4</p>
+                    </div>
+                    <h1 className="font-bold text-sm">
                         MY BLOG
                     </h1>
                     <p className="">
@@ -35,13 +59,24 @@ function Read() {
                     </p>
                     <br />
                     <div className="flex">
-                        <a className="rounded-xl px-2 py-1" href='https://github.com/Emmy-Akintz/larry-pat-foods' style={{ background: theme.ui }}>
+                        <a className="rounded-xl px-2 py-1" href='/' style={{ background: theme.ui }}>
                             <BsBoxArrowInUpRight />
                         </a>
                     </div>
                 </div>
-                <div className="border w-[280px] my-4 p-4">
-                    <h1 className="">
+                <div className="w-[280px] my-4 p-4">
+                    <div className="image w-[200px] rounded-[50%]">
+                        <img src={blogImage} alt="" />
+                    </div>
+                    <div className="text-sm mt-4 flex justify-between w-[70%] items-center">
+                        <p className="">APRIL 14</p>
+                        <p className="font-bold">|</p>
+                        <p className="">WEB DEV</p>
+                        <p className="font-bold">|</p>
+                        <AiOutlineComment />
+                        <p className="">4</p>
+                    </div>
+                    <h1 className="font-bold text-sm">
                         MY BLOG
                     </h1>
                     <p className="">
@@ -49,13 +84,24 @@ function Read() {
                     </p>
                     <br />
                     <div className="flex">
-                        <a className="rounded-xl px-2 py-1" href='https://github.com/Emmy-Akintz/larry-pat-foods' style={{ background: theme.ui }}>
+                        <a className="rounded-xl px-2 py-1" href='/' style={{ background: theme.ui }}>
                             <BsBoxArrowInUpRight />
                         </a>
                     </div>
                 </div>
-                <div className="border w-[280px] my-4 p-4">
-                    <h1 className="">
+                <div className="w-[280px] my-4 p-4">
+                    <div className="image w-[200px] rounded-[50%]">
+                        <img src={blogImage} alt="" />
+                    </div>
+                    <div className="text-sm mt-4 flex justify-between w-[70%] items-center">
+                        <p className="">APRIL 14</p>
+                        <p className="font-bold">|</p>
+                        <p className="">WEB DEV</p>
+                        <p className="font-bold">|</p>
+                        <AiOutlineComment />
+                        <p className="">4</p>
+                    </div>
+                    <h1 className="font-bold text-sm">
                         MY BLOG
                     </h1>
                     <p className="">
@@ -63,7 +109,7 @@ function Read() {
                     </p>
                     <br />
                     <div className="flex">
-                        <a className="rounded-xl px-2 py-1" href='https://github.com/Emmy-Akintz/larry-pat-foods' style={{ background: theme.ui }}>
+                        <a className="rounded-xl px-2 py-1" href='/' style={{ background: theme.ui }}>
                             <BsBoxArrowInUpRight />
                         </a>
                     </div>
