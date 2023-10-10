@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { ThemeContext } from '../contexts/ThemeContext'
-import { AiOutlineShareAlt } from 'react-icons/ai'
+import { AiFillGithub, AiOutlineEye, AiOutlineShareAlt } from 'react-icons/ai'
 
 function Work() {
     const { isLightTheme, light, dark } = useContext(ThemeContext)
@@ -13,33 +13,35 @@ function Work() {
             <br />
             <div className="lg:grid lg:grid-cols-2">
                 <div className="card w-[280px] my-4 p-4" style={{ background: theme.ui }}>
-                    <p className="">WORK 01</p>
+                    <p className="font-bold">WORK 01</p>
+                    <p className="text-sm">LARRY-PAT FOODS</p>
                     <br />
-                    <div className="flex justify-between w-[50%]">
-                        <div className="rounded-xl px-2 py-1" style={{ background: theme.bgg }}>
+                    <div className="flex justify-between w-[30%]">
+                        {/* <a className="rounded-xl px-2 py-1" href='/' style={{ background: theme.bgg }}>
                             <AiOutlineShareAlt />
-                        </div>
-                        <div className="rounded-xl px-2 py-1" style={{ background: theme.bgg }}>
-                            <AiOutlineShareAlt />
-                        </div>
-                        <div className="rounded-xl px-2 py-1" style={{ background: theme.bgg }}>
-                            <AiOutlineShareAlt />
-                        </div>
+                        </a> */}
+                        <a className="rounded-xl px-2 py-1" href='https://larry-pat-foods.netlify.app/' style={{ background: theme.bgg }}>
+                            <AiOutlineEye />
+                        </a>
+                        <a className="rounded-xl px-2 py-1" href='https://github.com/Emmy-Akintz/larry-pat-foods' style={{ background: theme.bgg }}>
+                            <AiFillGithub />
+                        </a>
                     </div>
                 </div>
                 <div className="card w-[280px] my-4 p-4" style={{ background: theme.ui }}>
-                    <p className="">WORK 01</p>
+                    <p className="font-bold">WORK 01</p>
+                    <p className="text-sm">LARRY-PAT FOODS</p>
                     <br />
-                    <div className="flex justify-between w-[50%]">
-                        <div className="rounded-xl px-2 py-1" style={{ background: theme.bgg }}>
+                    <div className="flex justify-between w-[30%]">
+                        {/* <a className="rounded-xl px-2 py-1" href='/' style={{ background: theme.bgg }}>
                             <AiOutlineShareAlt />
-                        </div>
-                        <div className="rounded-xl px-2 py-1" style={{ background: theme.bgg }}>
-                            <AiOutlineShareAlt />
-                        </div>
-                        <div className="rounded-xl px-2 py-1" style={{ background: theme.bgg }}>
-                            <AiOutlineShareAlt />
-                        </div>
+                        </a> */}
+                        <a className="rounded-xl px-2 py-1" href='https://larry-pat-foods.netlify.app/' style={{ background: theme.bgg }}>
+                            <AiOutlineEye />
+                        </a>
+                        <a className="rounded-xl px-2 py-1" href='https://github.com/Emmy-Akintz/larry-pat-foods' style={{ background: theme.bgg }}>
+                            <AiFillGithub />
+                        </a>
                     </div>
                 </div>
             </div>
