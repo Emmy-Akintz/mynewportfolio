@@ -7,6 +7,7 @@ function Education() {
     const theme = isLightTheme ? light : dark
     const [option1, setOption1] = useState(true)
     const [option2, setOption2] = useState(false)
+    const [option3, setOption3] = useState(false)
   return (
     <div className='mt-12'>
         <h1 className="text-sm">EDUCATION</h1>
@@ -31,6 +32,17 @@ function Education() {
             </div>
             <div className={option2 ? "block border mt-1 p-2 w-[280px] lg:w-[700px]" : "hidden"}>
                 I finished my secondary school education at Nigerian Navy Secondary School, Imeri, Ondo State, Nigeria. My favourite subjects then were mathematics, physics, further mathematics and technical drawing (I wanted to be an engineer 😅).
+            </div>
+        </div>
+        <div onClick={() => setOption3(!option3)} className="block mt-1">
+            <div className="w-[280px] lg:w-[700px] p-2 flex justify-between items-center cursor-pointer" style={{ background: theme.ui }}>
+                <p className="text-sm">WEB DEVELOPMENT TRAINING</p>
+                <AiOutlinePlus className={option3 ? 'hidden' : ''} />
+                <AiOutlineMinus className={option3 ? '' : 'hidden'} />
+            </div>
+            <div className={option3 ? "block border mt-1 p-2 w-[280px] lg:w-[700px]" : "hidden"}>
+                I started my training at JIT solutions, Akure 2021 October and completed it December 2022. During all my time there I created a couple of projects. 
+                <a href="https://jitsolutionsng.com/verification.php?id=635" style={{ color: theme.ui }}> Click to see my proof of certification</a>
             </div>
         </div>
     </div>

@@ -2,8 +2,6 @@ import React from 'react'
 // import image from '../assets/Emmanuel-2-removebg-preview.png'
 import cv from "../assets/Ayomide's_Resume.pdf"
 import { MdDownload } from 'react-icons/md'
-import 'animate.css/animate.min.css'
-// import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 function Intro() {
     return (

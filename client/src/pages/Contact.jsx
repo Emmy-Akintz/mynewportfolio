@@ -1,6 +1,10 @@
 import React, { useContext, useState } from 'react'
-import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
+import { AiOutlineInstagram, AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
 import { IoLocationOutline } from 'react-icons/io5'
+import { FaXTwitter } from 'react-icons/fa6'
+import { FiFacebook, FiLinkedin } from 'react-icons/fi'
+import { LiaTelegramPlane } from 'react-icons/lia'
+import { PiWhatsappLogoDuotone, PiWhatsappLogoLight } from 'react-icons/pi'
 import { ThemeContext } from '../contexts/ThemeContext'
 
 function Contact() {
@@ -53,6 +57,15 @@ function Contact() {
                         <div className="flex items-center w-[200px]">
                             +234 807 368 0320 <br />+234 816 765 9926
                         </div>
+                    </div>
+                    <div className="flex justify-between w-[80%]">
+                        <a className="x" href='https://twitter.com/emmy_ak7'><FaXTwitter /></a>
+                        <a className="facebook" href='https://web.facebook.com/ayomide.akintan.357/'><FiFacebook /></a>
+                        <a className="instagram" href='https://www.instagram.com/emmy_akintz/'><AiOutlineInstagram /></a>
+                        <a className="linkedIn" href='https://www.linkedin.com/in/ayomide-akintan-3a10a028b/'><FiLinkedin /></a>
+                        <a className="telegram" href='http://t.me/EmmyAkints'><LiaTelegramPlane /></a>
+                        <a className="whatsapp" href='http://wa.me/+2348073680320'><PiWhatsappLogoLight /></a>
+                        <a className="whatsapp" href='http://wa.me/+2348167659926'><PiWhatsappLogoDuotone /></a>
                     </div>
                 </div>
                 <div className="w-[300px]">
