@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import { motion, useInView, useAnimation } from 'framer-motion'
+import { motion, useInView, useAnimation, useScroll } from 'framer-motion'
 
 interface Props {
     children: JSX.Element
@@ -22,8 +22,8 @@ export const FadeUp = ({ children, width = "fit-content" }: Props) => {
         <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
             <motion.div
                 variants={{
-                    hidden: {opacity: 0, y: 75},
-                    visible: {opacity: 1, y: 0}
+                    hidden: { opacity: 0, y: 75 },
+                    visible: { opacity: 1, y: 0 }
                 }}
                 initial="hidden"
                 animate={mainControls}
@@ -49,8 +49,8 @@ export const SlideInLeft = ({ children, width = "fit-content" }: Props) => {
         <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
             <motion.div
                 variants={{
-                    hidden: {opacity: 0, x: -75},
-                    visible: {opacity: 1, x: 0}
+                    hidden: { opacity: 0, x: -75 },
+                    visible: { opacity: 1, x: 0 }
                 }}
                 initial="hidden"
                 animate={mainControls}
@@ -76,8 +76,8 @@ export const SlideInRight = ({ children, width = "fit-content" }: Props) => {
         <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
             <motion.div
                 variants={{
-                    hidden: {opacity: 0, x: 75},
-                    visible: {opacity: 1, x: 0}
+                    hidden: { opacity: 0, x: 75 },
+                    visible: { opacity: 1, x: 0 }
                 }}
                 initial="hidden"
                 animate={mainControls}
@@ -86,3 +86,14 @@ export const SlideInRight = ({ children, width = "fit-content" }: Props) => {
         </div>
     )
 }
+
+// export const CircleIndicator = () => {
+//     const { scrollYProgress } = useScroll()
+
+//     return (
+//         <motion.path
+//             d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"
+//             style={{ pathLength: scrollYProgress }}
+//         />
+//     )
+// }
