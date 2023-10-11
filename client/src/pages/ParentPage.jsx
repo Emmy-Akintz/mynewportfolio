@@ -38,7 +38,7 @@ function ParentPage() {
           </div>
         </FadeUp>
       </div>
-      <div className={sidebar ? '' : 'hidden md:block lg:block'} >
+      <div className={sidebar ? '' : 'hidden md:block lg:block'} style={{ zIndex: 20, position: 'absolute' }}>
         <Sidebar />
       </div>
       <div className="p-12 w-[350px] md:w-[600px] lg:w-[900px]">
