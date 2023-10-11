@@ -15,7 +15,7 @@ function Experience() {
         <h1 className="font-bold">WORK EXPERIENCE</h1>
       </FadeUp>
       <br />
-      <div className="w-[280px] lg:w-[700px]">
+      <div className="w-[280px] md:w-[400px] lg:w-[700px]">
         <div className="flex justify-between w-[100%]">
           <SlideInLeft>
             <h1 className="font-bold">Self-Learning</h1>
