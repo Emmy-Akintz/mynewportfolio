@@ -99,7 +99,7 @@ function Contact() {
                         </FadeUp>
                     </div>
                 </div>
-                <div className="w-[300px]">
+                <div className="w-[300px] mt-12 lg:mt-0">
                     <form onSubmit={handleSubmit}>
                         <SlideInRight>
                             <input type="text" placeholder='Name' className='my-2 p-2 w-[245px] lg:w-[254px]' style={{ background: theme.bgg }} value={name} onChange={(e) => setName(e.target.value)} required />
