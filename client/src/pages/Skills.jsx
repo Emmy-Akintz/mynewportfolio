@@ -16,12 +16,12 @@ function Skills() {
             </FadeUp>
             <br />
             <FadeUp>
-                <p className="">
+                <p className="w-[280px] md:w-[650px] lg:w-[610px] text-justify">
                     Over the past few years I've been able to learn a number of programming languages. Some I've developed my self in very well while others, well they're there. It's a gradual thing I believe. The goal is to get better everyday and keep on learning more.
                 </p>
             </FadeUp>
             <br />
-            <div className="lg:grid lg:grid-cols-2">
+            <div className="md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 w-[280px] md:w-[650px] lg:w-[650px]">
                 <SlideInLeft>
                     <div className="block w-[280px] my-4">
                         <div className="flex justify-between">

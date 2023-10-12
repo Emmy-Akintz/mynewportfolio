@@ -18,7 +18,7 @@ function Read() {
                 <h1 className="font-bold">RECENT BLOG</h1>
             </FadeUp>
             <br />
-            <div className="lg:grid lg:grid-cols-2">
+            <div className="md:grid lg:grid md:grid-cols-2 lg:grid-cols-2">
                 <div className="w-[280px] my-4 p-4">
                     <SlideInLeft>
                         <div className="image w-[200px] rounded-[50%]">
@@ -51,7 +51,7 @@ function Read() {
                         </h1>
                     </SlideInLeft>
                     <SlideInLeft>
-                        <p className="">
+                        <p className="text-justify w-[200px]">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, obcaecati.
                         </p>
                     </SlideInLeft>
@@ -96,7 +96,7 @@ function Read() {
                         </h1>
                     </SlideInRight>
                     <SlideInRight>
-                        <p className="">
+                        <p className="text-justify w-[200px]">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, obcaecati.
                         </p>
                     </SlideInRight>

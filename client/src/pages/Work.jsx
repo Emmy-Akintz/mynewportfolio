@@ -16,7 +16,7 @@ function Work() {
                 <h1 className="font-bold">RECENT WORK</h1>
             </FadeUp>
             <br />
-            <div className="lg:grid lg:grid-cols-2">
+            <div className="md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 w-[280px] md:w-[650px] lg:w-[650px]">
                 <SlideInLeft>
                     <div className="card w-[280px] my-4 p-4" style={{ background: theme.ui }}>
                         <p className="font-bold">WORK 01</p>

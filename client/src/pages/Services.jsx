@@ -17,7 +17,7 @@ function Services() {
             <FadeUp>
                 <h1 className="font-bold">HERE ARE SOME OF MY EXPERTISE</h1>
             </FadeUp>
-            <div className="lg:grid lg:grid-cols-2">
+            <div className="md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 w-[280px] md:w-[650px] lg:w-[610px]">
                 <div className="card p-5 w-[280px] mt-20" style={{ borderBottom: `3px solid ${theme.ui}`, boxShadow: `0px -20px 50px 20px ${theme.bgg}` }}>
                     <SlideInLeft className="">
                         <IconContext.Provider value={{ color: theme.ui }}>

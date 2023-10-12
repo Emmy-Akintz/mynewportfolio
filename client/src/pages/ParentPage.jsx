@@ -20,9 +20,9 @@ function ParentPage() {
   const theme = isLightTheme ? light : dark
 
   return (
-    <div className='md:flex lg:flex justify-between' style={{ background: theme.bg, color: theme.syntax }}>
+    <div className='lg:flex justify-between' style={{ background: theme.bg, color: theme.syntax }}>
       <div className='fixed top-[10px] right-[10px]'>
-        <div className="md:hidden lg:hidden p-4">
+        <div className="lg:hidden p-4">
           <FadeUp>
             <div className={sidebar ? 'hidden' : 'block'} onClick={() => setSidebar(true)}>
               <MdMenu />
@@ -38,10 +38,10 @@ function ParentPage() {
           </div>
         </FadeUp>
       </div>
-      <div className={sidebar ? 'absolute' : 'hidden md:block lg:block'} style={{ zIndex: 20 }}>
+      <div className={sidebar ? 'absolute' : 'hidden md:hidden lg:block'} style={{ zIndex: 20 }}>
         <Sidebar />
       </div>
-      <div className="p-12 w-[350px] md:w-[600px] lg:w-[900px]">
+      <div className="p-12 w-[350px] md:w-[80%] lg:w-[70%]">
         <Intro />
         <About />
         <Services />

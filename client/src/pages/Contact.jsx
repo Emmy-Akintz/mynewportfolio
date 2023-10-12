@@ -37,7 +37,7 @@ function Contact() {
                 <h1 className="font-bold">CONTACT</h1>
             </FadeUp>
             <br />
-            <div className="lg:grid lg:grid-cols-2">
+            <div className="md:grid lg:grid md:grid-cols-2 lg:grid-cols-2">
                 <div className="w-[300px]">
                     <div className="flex justify-between w-[90%] my-8">
                         <SlideInLeft>
@@ -99,7 +99,7 @@ function Contact() {
                         </FadeUp>
                     </div>
                 </div>
-                <div className="w-[300px] mt-12 lg:mt-0">
+                <div className="w-[300px] mt-12 md:mt-0 lg:mt-0">
                     <form onSubmit={handleSubmit}>
                         <SlideInRight>
                             <input type="text" placeholder='Name' className='my-2 p-2 w-[245px] lg:w-[254px]' style={{ background: theme.bgg }} value={name} onChange={(e) => setName(e.target.value)} required />

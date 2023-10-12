@@ -15,7 +15,7 @@ function Experience() {
         <h1 className="font-bold">WORK EXPERIENCE</h1>
       </FadeUp>
       <br />
-      <div className="w-[280px] md:w-[400px] lg:w-[700px]">
+      <div className="w-[280px] md:w-[650px] lg:w-[610px]">
         <div className="flex justify-between w-[100%]">
           <SlideInLeft>
             <h1 className="font-bold">Self-Learning</h1>
@@ -33,7 +33,7 @@ function Experience() {
           </SlideInRight>
         </div>
         <FadeUp>
-          <p className="mt-2">
+          <p className="mt-2 text-justify">
             I've been learning and researching a lot ever since I began coding and I've built a lot of projects with good functionalities.
           </p>
         </FadeUp>
