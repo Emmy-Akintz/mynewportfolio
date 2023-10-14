@@ -70,7 +70,7 @@ function ParentPage() {
       >
         <Sidebar />
       </div>
-      <div className={`p-12 w-[350px] md:w-[80%] lg:w-[70%] ${sidebar ? 'mix-blend-overlay h-[100vh] overflow-hidden' : ''}`}>
+      <div className={`p-12 w-[350px] md:w-[80%] lg:w-[70%] ${sidebar ? 'mix-blend-overlay h-[auto] overflow-hidden' : ''}`}>
         <Intro />
         <About />
         <Services />
