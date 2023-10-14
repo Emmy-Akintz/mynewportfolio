@@ -29,9 +29,11 @@ function ParentPage() {
     }
 
     document.addEventListener("mousedown", handler)
+    document.addEventListener("scroll", handler)
 
     return () => {
       document.removeEventListener("mousedown", handler)
+      document.removeEventListener("scroll", handler)
     }
   })
 
@@ -46,7 +48,9 @@ function ParentPage() {
       <div className='fixed top-[10px] right-[10px]'>
         <div className="lg:hidden p-4">
           <FadeUp>
-            <div className={sidebar ? 'hidden' : 'block animate-pulse'} onClick={() => setSidebar(true)}>
+            <div
+              className={sidebar ? 'hidden' : 'block z-40 animate-pulse'}
+              onClick={() => setSidebar(true)}>
               <MdMenu />
             </div>
             <div className={sidebar ? 'block z-40 animate-pulse' : 'hidden'} onClick={() => setSidebar(false)}>
