@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react'
+import React, { useContext, useState, useEffect, useRef } from 'react'
 import Sidebar from '../components/Sidebar'
 import { MdMenu, MdCancel } from 'react-icons/md'
 import { ThemeContext } from '../contexts/ThemeContext'
@@ -19,12 +19,20 @@ function ParentPage() {
   const { isLightTheme, light, dark } = useContext(ThemeContext)
   const theme = isLightTheme ? light : dark
 
+  let menuRef = useRef()
+
   useEffect(() => {
-    let handler = () => {
-      setSidebar(false)
+    let handler = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        setSidebar(false)
+      }
     }
 
     document.addEventListener("mousedown", handler)
+
+    return() => {
+      document.removeEventListener("mousedown", handler)
+    }
   })
 
   return (
@@ -46,7 +54,10 @@ function ParentPage() {
           </div>
         </FadeUp>
       </div>
-      <div className={sidebar ? 'visible absolute' : 'invisible md:invisible lg:block'} style={{ zIndex: 40 }}>
+      <div
+        className={sidebar ? 'visible absolute' : 'invisible md:invisible lg:block'} style={{ zIndex: 40 }}
+        ref={menuRef}
+      >
         <Sidebar />
       </div>
       <div className={`p-12 w-[350px] md:w-[80%] lg:w-[70%] ${sidebar ? 'mix-blend-overlay' : ''}`}>
