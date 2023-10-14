@@ -17,15 +17,33 @@ function Sidebar() {
                 IN NIGERIA
             </p>
             <ul className='mt-4'>
-                <li className='text-sm mt-1'>HOME</li>
-                <li className='text-sm mt-1'>ABOUT</li>
-                <li className='text-sm mt-1'>SERVICES</li>
-                <li className='text-sm mt-1'>SKILLS</li>
-                <li className='text-sm mt-1'>EDUCATION</li>
-                <li className='text-sm mt-1'>EXPERIENCE</li>
-                <li className='text-sm mt-1'>WORK</li>
-                <li className='text-sm mt-1'>BLOG</li>
-                <li className='text-sm mt-1'>CONTACT</li>
+                <li className='text-sm mt-1'>
+                    <a href="http://">HOME</a>
+                </li>
+                <li className='text-sm mt-1'>
+                    <a href="http://">ABOUT</a>
+                </li>
+                <li className='text-sm mt-1'>
+                    <a href="http://">SERVICES</a>
+                </li>
+                <li className='text-sm mt-1'>
+                    <a href="http://">SKILLS</a>
+                </li>
+                <li className='text-sm mt-1'>
+                    <a href="http://">EDUCATION</a>
+                </li>
+                <li className='text-sm mt-1'>
+                    <a href="http://">EXPERIENCE</a>
+                </li>
+                <li className='text-sm mt-1'>
+                    <a href="http://">WORK</a>
+                </li>
+                <li className='text-sm mt-1'>
+                    <a href="http://">BLOG</a>
+                </li>
+                <li className='text-sm mt-1'>
+                    <a href="http://">CONTACT</a>
+                </li>
             </ul>
             <p className="text-sm mt-4">&copy; Copyright 2023.</p>
             <p className="text-sm mb-10">All rights reserved.</p>
