@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import Sidebar from '../components/Sidebar'
 import { MdMenu, MdCancel } from 'react-icons/md'
 import { ThemeContext } from '../contexts/ThemeContext'
@@ -19,6 +19,14 @@ function ParentPage() {
   const { isLightTheme, light, dark } = useContext(ThemeContext)
   const theme = isLightTheme ? light : dark
 
+  useEffect(() => {
+    let handler = () => {
+      setSidebar(false)
+    }
+
+    document.addEventListener("mousedown", handler)
+  })
+
   return (
     <div className='lg:flex justify-between' style={{ background: theme.bg, color: theme.syntax }}>
       <div className='fixed top-[10px] right-[10px]'>
@@ -27,7 +35,7 @@ function ParentPage() {
             <div className={sidebar ? 'hidden' : 'block animate-pulse'} onClick={() => setSidebar(true)}>
               <MdMenu />
             </div>
-            <div className={sidebar ? 'block animate-pulse' : 'hidden'} onClick={() => setSidebar(false)}>
+            <div className={sidebar ? 'block z-40 animate-pulse' : 'hidden'} onClick={() => setSidebar(false)}>
               <MdCancel />
             </div>
           </FadeUp>
@@ -38,10 +46,10 @@ function ParentPage() {
           </div>
         </FadeUp>
       </div>
-      <div className={sidebar ? 'absolute' : 'hidden md:hidden lg:block'} style={{ zIndex: 40 }}>
+      <div className={sidebar ? 'visible absolute' : 'invisible md:invisible lg:block'} style={{ zIndex: 40 }}>
         <Sidebar />
       </div>
-      <div className="p-12 w-[350px] md:w-[80%] lg:w-[70%]">
+      <div className={`p-12 w-[350px] md:w-[80%] lg:w-[70%] ${sidebar ? 'mix-blend-overlay' : ''}`}>
         <Intro />
         <About />
         <Services />
