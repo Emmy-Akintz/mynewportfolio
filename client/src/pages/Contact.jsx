@@ -37,7 +37,7 @@ function Contact() {
                 <h1 className="font-bold">CONTACT</h1>
             </FadeUp>
             <br />
-            <div className="md:grid lg:grid md:grid-cols-2 lg:grid-cols-2">
+            <div className="">
                 <div className="w-[300px]">
                     <div className="flex justify-between w-[90%] my-8">
                         <SlideInLeft>
@@ -98,33 +98,12 @@ function Contact() {
                             <a className="whatsapp" href='http://wa.me/+2348167659926'><PiWhatsappLogoDuotone /></a>
                         </FadeUp>
                     </div>
-                </div>
-                <div className="w-[300px] mt-12 md:mt-0 lg:mt-0">
-                    <form onSubmit={handleSubmit}>
-                        <SlideInRight>
-                            <input type="text" placeholder='Name' className='my-2 p-2 w-[245px] lg:w-[254px]' style={{ background: theme.bgg }} value={name} onChange={(e) => setName(e.target.value)} required />
-                        </SlideInRight>
-                        <SlideInRight>
-                            <input type="email" placeholder='Email' className='my-2 p-2 w-[245px] lg:w-[254px]' style={{ background: theme.bgg }} value={email} onChange={(e) => setEmail(e.target.value)} required />
-                        </SlideInRight>
-                        <SlideInRight>
-                            <input type="text" placeholder='Subject' className='my-2 p-2 w-[245px] lg:w-[254px]' style={{ background: theme.bgg }} value={subject} onChange={(e) => setSubject(e.target.value)} required />
-                        </SlideInRight>
-                        <SlideInRight>
-                            <textarea cols="30" rows="5" placeholder='Message' className='my-2 p-2' style={{ background: theme.bgg }} value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
-                        </SlideInRight>
-                        <div className="flex w-[80%] justify-between">
-                            <FadeUp>
-                                <button type="submit" className='py-2 px-1 rounded' style={{ background: theme.ui }}>
-                                    SEND MESSAGE
-                                </button>
-                            </FadeUp>
-                            <div className="p-2 rounded" style={confirm ? { border: `1px solid ${theme.ui}` } : { border: 'none' }} onChange={(e) => setConfirm(e.target.value)}>{confirm}</div>
-                            {/* <button type="reset" onClick={console.log('hello')} className='py-2 px-1 rounded' style={{ background: theme.ui }}>
-                                CLEAR MESSAGE
-                            </button> */}
-                        </div>
-                    </form>
+                    <br />
+                    <FadeUp>
+                        <a href='mailto:emzyakints2005@gmail.com' className='py-4 px-2 cursor-pointer' style={{ background: theme.ui }}>
+                            SEND MESSAGE
+                        </a>
+                    </FadeUp>
                 </div>
             </div>
         </div>
