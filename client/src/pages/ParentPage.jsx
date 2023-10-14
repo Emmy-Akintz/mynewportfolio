@@ -30,13 +30,19 @@ function ParentPage() {
 
     document.addEventListener("mousedown", handler)
 
-    return() => {
+    return () => {
       document.removeEventListener("mousedown", handler)
     }
   })
 
   return (
-    <div className='lg:flex justify-between' style={{ background: theme.bg, color: theme.syntax }}>
+    <div
+      className='lg:flex justify-between'
+      style={{
+        background: theme.bg,
+        color: theme.syntax,
+        // '&::WebkitScrollbarThumb': { background: theme.ui }
+      }}>
       <div className='fixed top-[10px] right-[10px]'>
         <div className="lg:hidden p-4">
           <FadeUp>

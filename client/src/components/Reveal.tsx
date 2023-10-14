@@ -162,14 +162,3 @@ export const SlideInRight = ({ children, width = "fit-content" }: Props) => {
         </div>
     )
 }
-
-// export const CircleIndicator = () => {
-//     const { scrollYProgress } = useScroll()
-
-//     return (
-//         <motion.path
-//             d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"
-//             style={{ pathLength: scrollYProgress }}
-//         />
-//     )
-// }
