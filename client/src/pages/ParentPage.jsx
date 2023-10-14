@@ -55,7 +55,7 @@ function ParentPage() {
         </FadeUp>
       </div>
       <div
-        className={sidebar ? 'visible absolute' : 'invisible md:invisible lg:block'} style={{ zIndex: 40 }}
+        className={sidebar ? 'visible absolute' : 'invisible md:invisible lg:visible'} style={{ zIndex: 40 }}
         ref={menuRef}
       >
         <Sidebar />
