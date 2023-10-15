@@ -17,31 +17,31 @@ function Sidebar() {
                 IN NIGERIA
             </p>
             <ul className='mt-4'>
-                <li className='text-sm mt-1'>
+                <li className='text-sm mt-1 font-bold'>
                     <a href="http://">HOME</a>
                 </li>
-                <li className='text-sm mt-1'>
+                <li className='text-sm mt-1 font-bold'>
                     <a href="http://">ABOUT</a>
                 </li>
-                <li className='text-sm mt-1'>
+                <li className='text-sm mt-1 font-bold'>
                     <a href="http://">SERVICES</a>
                 </li>
-                <li className='text-sm mt-1'>
+                <li className='text-sm mt-1 font-bold'>
                     <a href="http://">SKILLS</a>
                 </li>
-                <li className='text-sm mt-1'>
+                <li className='text-sm mt-1 font-bold'>
                     <a href="http://">EDUCATION</a>
                 </li>
-                <li className='text-sm mt-1'>
+                <li className='text-sm mt-1 font-bold'>
                     <a href="http://">EXPERIENCE</a>
                 </li>
-                <li className='text-sm mt-1'>
+                <li className='text-sm mt-1 font-bold'>
                     <a href="http://">WORK</a>
                 </li>
-                <li className='text-sm mt-1'>
+                <li className='text-sm mt-1 font-bold'>
                     <a href="http://">BLOG</a>
                 </li>
-                <li className='text-sm mt-1'>
+                <li className='text-sm mt-1 font-bold'>
                     <a href="http://">CONTACT</a>
                 </li>
             </ul>
