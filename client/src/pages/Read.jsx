@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { BsBoxArrowInUpRight } from 'react-icons/bs'
 import { ThemeContext } from '../contexts/ThemeContext'
 import { AiOutlineComment } from 'react-icons/ai'
-import blogImage from '../assets/Emmanuel-2.jpg'
+// import blogImage from '../assets/CV-pic.jpg'
 import { FadeUp, SlideInLeft, SlideInRight } from '../components/Reveal'
 
 function Read() {
@@ -22,7 +22,7 @@ function Read() {
                 <div className="w-[280px] my-4 p-4">
                     <SlideInLeft>
                         <div className="image w-[200px] rounded-[50%]">
-                            <img src={blogImage} alt="" />
+                            <img src='https://random.imagecdn.app/v1/image?width=500&height=300' alt="" className='rounded' />
                         </div>
                     </SlideInLeft>
                     <div className="text-sm mt-4 flex justify-between w-[70%] items-center">
@@ -67,7 +67,7 @@ function Read() {
                 <div className="w-[280px] my-4 p-4">
                     <SlideInRight>
                         <div className="image w-[200px] rounded-[50%]">
-                            <img src={blogImage} alt="" />
+                            <img src='https://random.imagecdn.app/v1/image?width=500&height=300' alt="" className='rounded' />
                         </div>
                     </SlideInRight>
                     <div className="text-sm mt-4 flex justify-between w-[70%] items-center">

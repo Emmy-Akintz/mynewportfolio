@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { ThemeContext } from '../contexts/ThemeContext'
-import image from '../assets/Emmanuel-2.jpg'
+import image from '../assets/CV-pic.jpg'
 
 function Sidebar() {
     const { isLightTheme, light, dark } = useContext(ThemeContext)
