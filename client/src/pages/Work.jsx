@@ -55,6 +55,25 @@ function Work() {
                         </div>
                     </div>
                 </SlideInRight>
+                <SlideInLeft>
+                    <div className="card w-[280px] my-4 p-4 rounded" style={{ background: theme.ui }}>
+                        <iframe src='https://emzy-calculator.netlify.app/' title='Hackathon Page' width='100%' className='mb-4'></iframe>
+                        <p className="font-bold">WORK 03</p>
+                        <p className="text-sm">LIGHT/DARK THEME CALCULATOR</p>
+                        <br />
+                        <div className="flex justify-between w-[30%]">
+                            {/* <a className="rounded-xl px-2 py-1" href='/' style={{ background: theme.bgg }}>
+                            <AiOutlineShareAlt />
+                        </a> */}
+                            <a className="rounded-xl px-2 py-1" href='https://emzy-calculator.netlify.app/' style={{ background: theme.bgg }}>
+                                <AiOutlineEye />
+                            </a>
+                            {/* <a className="rounded-xl px-2 py-1" href='https://github.com/Emmy-Akintz/pre-hackathon' style={{ background: theme.bgg }}>
+                                <AiFillGithub />
+                            </a> */}
+                        </div>
+                    </div>
+                </SlideInLeft>
             </div>
         </div>
     )
