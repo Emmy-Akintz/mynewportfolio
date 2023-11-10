@@ -4,6 +4,7 @@ import { ThemeContext } from '../contexts/ThemeContext'
 import { AiOutlineComment } from 'react-icons/ai'
 // import blogImage from '../assets/CV-pic.jpg'
 import { FadeUp, SlideInLeft, SlideInRight } from '../components/Reveal'
+import { Link } from 'react-router-dom'
 
 function Read() {
     const { isLightTheme, light, dark } = useContext(ThemeContext)
@@ -47,20 +48,20 @@ function Read() {
                     </div>
                     <SlideInLeft>
                         <h1 className="font-bold text-sm">
-                            MY BLOG
+                            ACTIONS HAVE GREATER IMPACTS THAN WE THINK
                         </h1>
                     </SlideInLeft>
                     <SlideInLeft>
                         <p className="text-justify w-[200px]">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, obcaecati.
+                            A car moving without a steering wheel is bound for an accident. A man without a purpose/vision/aim is bound to live a life filled with frustration.
                         </p>
                     </SlideInLeft>
                     <br />
                     <SlideInLeft>
                         <div className="flex">
-                            <a className="rounded-xl px-2 py-1" href='/' style={{ background: theme.ui }}>
+                            <Link to='/AHGITWT' className="rounded-xl px-2 py-1" style={{ background: theme.ui }}>
                                 <BsBoxArrowInUpRight />
-                            </a>
+                            </Link>
                         </div>
                     </SlideInLeft>
                 </div>
@@ -103,9 +104,9 @@ function Read() {
                     <br />
                     <SlideInRight>
                         <div className="flex">
-                            <a className="rounded-xl px-2 py-1" href='/' style={{ background: theme.ui }}>
+                            <Link to='/' className="rounded-xl px-2 py-1" style={{ background: theme.ui }}>
                                 <BsBoxArrowInUpRight />
-                            </a>
+                            </Link>
                         </div>
                     </SlideInRight>
                 </div>

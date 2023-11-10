@@ -15,7 +15,7 @@ function ToggleTheme() {
     return (
         <button className='p-4' onClick={changeTheme}>
             <div className={isLightTheme ? 'animate-pulse' : 'hidden'}><MdDarkMode /></div>
-            <div className={isLightTheme ? 'hidden' : 'animate-spin'}><MdLightMode /></div>
+            <div className={isLightTheme ? 'hidden' : 'animate-pulse'}><MdLightMode /></div>
         </button>
     )
 }
