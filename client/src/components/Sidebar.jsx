@@ -18,31 +18,31 @@ function Sidebar() {
             </p>
             <ul className='mt-4'>
                 <li className='text-sm mt-1 font-bold'>
-                    <a href="http://">HOME</a>
+                    <a href="#home">HOME</a>
                 </li>
                 <li className='text-sm mt-1 font-bold'>
-                    <a href="http://">ABOUT</a>
+                    <a href="#about">ABOUT</a>
                 </li>
                 <li className='text-sm mt-1 font-bold'>
-                    <a href="http://">SERVICES</a>
+                    <a href="#services">SERVICES</a>
                 </li>
                 <li className='text-sm mt-1 font-bold'>
-                    <a href="http://">SKILLS</a>
+                    <a href="#skills">SKILLS</a>
                 </li>
                 <li className='text-sm mt-1 font-bold'>
-                    <a href="http://">EDUCATION</a>
+                    <a href="#education">EDUCATION</a>
                 </li>
                 <li className='text-sm mt-1 font-bold'>
-                    <a href="http://">EXPERIENCE</a>
+                    <a href="#experience">EXPERIENCE</a>
                 </li>
                 <li className='text-sm mt-1 font-bold'>
-                    <a href="http://">WORK</a>
+                    <a href="#work">WORK</a>
                 </li>
                 <li className='text-sm mt-1 font-bold'>
-                    <a href="http://">BLOG</a>
+                    <a href="#blog">BLOG</a>
                 </li>
                 <li className='text-sm mt-1 font-bold'>
-                    <a href="http://">CONTACT</a>
+                    <a href="#contact">CONTACT</a>
                 </li>
             </ul>
             <p className="text-sm mt-4">&copy; Copyright 2023.</p>

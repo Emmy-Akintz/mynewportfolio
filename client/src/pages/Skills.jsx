@@ -6,7 +6,7 @@ function Skills() {
     const { isLightTheme, light, dark } = useContext(ThemeContext)
     const theme = isLightTheme ? light : dark
     return (
-        <div className='mt-12'>
+        <div id='skills' className='mt-12'>
             <FadeUp>
                 <h1 className="text-sm">MY SPECIALTY</h1>
             </FadeUp>

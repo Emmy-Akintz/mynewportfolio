@@ -10,7 +10,7 @@ function Education() {
     const [option2, setOption2] = useState(false)
     const [option3, setOption3] = useState(false)
     return (
-        <div className='mt-12'>
+        <div id='education' className='mt-12'>
             <FadeUp>
                 <h1 className="text-sm">EDUCATION</h1>
             </FadeUp>

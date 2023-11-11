@@ -70,16 +70,16 @@ function ParentPage() {
       >
         <Sidebar />
       </div>
-      <div className={`p-12 w-[350px] md:w-[80%] lg:w-[70%] ${sidebar ? 'mix-blend-overlay h-[100vh] overflow-hidden' : ''}`}>
-        <Intro href='#top' />
-        <About href='#about' />
-        <Services href='#services' />
-        <Skills href='#skills' />
-        <Education href='#education' />
-        <Experience href='#experience' />
-        <Work href='#work' />
-        <Read href='#blog' />
-        <Contact href='#contact' />
+      <div className={`p-12 w-[350px] md:w-[80%] lg:w-[70%] ${sidebar ? 'mix-blend-overlay overflow-hidden' : ''}`}>
+        <Intro />
+        <About />
+        <Services />
+        <Skills />
+        <Education />
+        <Experience />
+        <Work />
+        <Read />
+        <Contact />
       </div>
     </div>
   )

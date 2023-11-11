@@ -28,7 +28,7 @@ function Contact() {
     const { isLightTheme, light, dark } = useContext(ThemeContext)
     const theme = isLightTheme ? light : dark
     return (
-        <div className='mt-12'>
+        <div id='contact' className='mt-12'>
             <FadeUp>
                 <h1 className="text-sm">GET IN TOUCH</h1>
             </FadeUp>

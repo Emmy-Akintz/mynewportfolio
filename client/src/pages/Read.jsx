@@ -10,7 +10,7 @@ function Read() {
     const { isLightTheme, light, dark } = useContext(ThemeContext)
     const theme = isLightTheme ? light : dark
     return (
-        <div>
+        <div id='blog'>
             <FadeUp>
                 <h1 className="text-sm">READ</h1>
             </FadeUp>

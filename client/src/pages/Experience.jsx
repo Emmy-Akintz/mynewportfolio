@@ -6,7 +6,7 @@ function Experience() {
   const { isLightTheme, light, dark } = useContext(ThemeContext)
   const theme = isLightTheme ? light : dark
   return (
-    <div className='mt-12'>
+    <div id='experience' className='mt-12'>
       <FadeUp>
         <h1 className="text-sm">EXPERIENCE</h1>
       </FadeUp>

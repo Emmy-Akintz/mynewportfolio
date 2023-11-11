@@ -6,7 +6,7 @@ import { FadeUp } from '../components/Reveal'
 
 function Intro() {
     return (
-        <div className='Intro text-center lg:text-left m-auto lg:ml-0 h-[100vh]'
+        <div id='home' className='Intro text-center lg:text-left m-auto lg:ml-0 h-[100vh]'
             style={{
                 // backgroundImage: `url(${image})`, backgroundRepeat: "no-repeat", backgroundSize: "contain", backgroundPosition: "right"
             }}>

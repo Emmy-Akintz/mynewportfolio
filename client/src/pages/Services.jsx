@@ -9,7 +9,7 @@ function Services() {
 
     const theme = isLightTheme ? light : dark
     return (
-        <div className='mt-12'>
+        <div id='services' className='mt-12'>
             <FadeUp>
                 <h1 className="text-sm">WHAT I DO</h1>
             </FadeUp>
