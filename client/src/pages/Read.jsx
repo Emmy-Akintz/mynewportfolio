@@ -28,7 +28,7 @@ function Read() {
                     </SlideInLeft>
                     <div className="text-sm mt-4 flex justify-between w-[70%] items-center">
                         <SlideInLeft>
-                            <p className="">NOV 10 14</p>
+                            <p className="">NOV 10</p>
                         </SlideInLeft>
                         <SlideInLeft>
                             <p className="font-bold">|</p>
