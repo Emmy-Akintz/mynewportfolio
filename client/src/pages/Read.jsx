@@ -28,13 +28,13 @@ function Read() {
                     </SlideInLeft>
                     <div className="text-sm mt-4 flex justify-between w-[70%] items-center">
                         <SlideInLeft>
-                            <p className="">APRIL 14</p>
+                            <p className="">NOV 10 14</p>
                         </SlideInLeft>
                         <SlideInLeft>
                             <p className="font-bold">|</p>
                         </SlideInLeft>
                         <SlideInLeft>
-                            <p className="">WEB DEV</p>
+                            <p className="">SELF HELP</p>
                         </SlideInLeft>
                         <SlideInLeft>
                             <p className="font-bold">|</p>
