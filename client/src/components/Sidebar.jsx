@@ -3,8 +3,10 @@ import { ThemeContext } from '../contexts/ThemeContext'
 import image from '../assets/CV-pic.jpg'
 
 function Sidebar() {
+
     const { isLightTheme, light, dark } = useContext(ThemeContext)
     const theme = isLightTheme ? light : dark
+
     const [isHovered1, setIsHovered1] = useState(false)
     const [isHovered2, setIsHovered2] = useState(false)
     const [isHovered3, setIsHovered3] = useState(false)
@@ -14,6 +16,7 @@ function Sidebar() {
     const [isHovered7, setIsHovered7] = useState(false)
     const [isHovered8, setIsHovered8] = useState(false)
     const [isHovered9, setIsHovered9] = useState(false)
+
     return (
         <div className='Sidebar p-10 fixed h-[100vh] md:ml-8 lg:ml-10 w-[300px] text-center overflow-y-scroll' style={{ background: theme.bgg, color: theme.syntax }}>
             <div className="image w-[200px] h-[200px] m-auto">
@@ -32,6 +35,7 @@ function Sidebar() {
                     style={{
                         color: isHovered1 ? theme.ui : ``,
                         background: isHovered1 ? theme.bg : ``,
+                        fontSize: isHovered1 ? `16px` : ``,
                         // textDecoration: 'underline',
                         // textDecorationColor: theme.ui
                     }}
@@ -46,6 +50,7 @@ function Sidebar() {
                     style={{
                         color: isHovered2 ? theme.ui : ``,
                         background: isHovered2 ? theme.bg : ``,
+                        fontSize: isHovered2 ? `16px` : ``,
                         // textDecoration: 'underline',
                         // textDecorationColor: theme.ui
                     }}
@@ -60,6 +65,7 @@ function Sidebar() {
                     style={{
                         color: isHovered3 ? theme.ui : ``,
                         background: isHovered3 ? theme.bg : ``,
+                        fontSize: isHovered3 ? `16px` : ``,
                         // textDecoration: 'underline',
                         // textDecorationColor: theme.ui
                     }}
@@ -74,6 +80,7 @@ function Sidebar() {
                     style={{
                         color: isHovered4 ? theme.ui : ``,
                         background: isHovered4 ? theme.bg : ``,
+                        fontSize: isHovered4 ? `16px` : ``,
                         // textDecoration: 'underline',
                         // textDecorationColor: theme.ui
                     }}
@@ -88,6 +95,7 @@ function Sidebar() {
                     style={{
                         color: isHovered5 ? theme.ui : ``,
                         background: isHovered5 ? theme.bg : ``,
+                        fontSize: isHovered5 ? `16px` : ``,
                         // textDecoration: 'underline',
                         // textDecorationColor: theme.ui
                     }}
@@ -102,6 +110,7 @@ function Sidebar() {
                     style={{
                         color: isHovered6 ? theme.ui : ``,
                         background: isHovered6 ? theme.bg : ``,
+                        fontSize: isHovered6 ? `16px` : ``,
                         // textDecoration: 'underline',
                         // textDecorationColor: theme.ui
                     }}
@@ -116,6 +125,7 @@ function Sidebar() {
                     style={{
                         color: isHovered7 ? theme.ui : ``,
                         background: isHovered7 ? theme.bg : ``,
+                        fontSize: isHovered7 ? `16px` : ``,
                         // textDecoration: 'underline',
                         // textDecorationColor: theme.ui
                     }}
@@ -130,6 +140,7 @@ function Sidebar() {
                     style={{
                         color: isHovered8 ? theme.ui : ``,
                         background: isHovered8 ? theme.bg : ``,
+                        fontSize: isHovered8 ? `16px` : ``,
                         // textDecoration: 'underline',
                         // textDecorationColor: theme.ui
                     }}
@@ -144,6 +155,7 @@ function Sidebar() {
                     style={{
                         color: isHovered9 ? theme.ui : ``,
                         background: isHovered9 ? theme.bg : ``,
+                        fontSize: isHovered9 ? `16px` : ``,
                         // textDecoration: 'underline',
                         // textDecorationColor: theme.ui
                     }}
