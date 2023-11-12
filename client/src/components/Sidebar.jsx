@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { ThemeContext } from '../contexts/ThemeContext'
 import image from '../assets/CV-pic.jpg'
+import { NavLink } from 'react-router-dom'
 
 function Sidebar() {
 
@@ -34,7 +35,7 @@ function Sidebar() {
                     className='text-sm mt-1 font-bold rounded-xl'
                     style={{
                         color: isHovered1 ? theme.ui : ``,
-                        background: isHovered1 ? theme.bg : ``,
+                        // backgroundColor: isHovered1 ? isLightTheme ? `ButtonShadow` : `` : ``,
                         fontSize: isHovered1 ? `16px` : ``,
                         // textDecoration: 'underline',
                         // textDecorationColor: theme.ui
@@ -42,14 +43,14 @@ function Sidebar() {
                     onMouseEnter={() => setIsHovered1(true)}
                     onMouseLeave={() => setIsHovered1(false)}
                 >
-                    <a href="#home">HOME</a>
+                    <NavLink to="#home" activeClassName="active">HOME</NavLink>
                 </li>
 
                 <li
                     className='text-sm mt-1 font-bold rounded-xl'
                     style={{
                         color: isHovered2 ? theme.ui : ``,
-                        background: isHovered2 ? theme.bg : ``,
+                        // backgroundColor: isHovered2 ? isLightTheme ? `ButtonShadow` : `` : ``,
                         fontSize: isHovered2 ? `16px` : ``,
                         // textDecoration: 'underline',
                         // textDecorationColor: theme.ui
@@ -57,14 +58,14 @@ function Sidebar() {
                     onMouseEnter={() => setIsHovered2(true)}
                     onMouseLeave={() => setIsHovered2(false)}
                 >
-                    <a href="#about">ABOUT</a>
+                    <NavLink to="#about" activeClassName="active">ABOUT</NavLink>
                 </li>
 
                 <li
                     className='text-sm mt-1 font-bold rounded-xl'
                     style={{
                         color: isHovered3 ? theme.ui : ``,
-                        background: isHovered3 ? theme.bg : ``,
+                        // backgroundColor: isHovered3 ? isLightTheme ? `ButtonShadow` : `` : ``,
                         fontSize: isHovered3 ? `16px` : ``,
                         // textDecoration: 'underline',
                         // textDecorationColor: theme.ui
@@ -72,14 +73,14 @@ function Sidebar() {
                     onMouseEnter={() => setIsHovered3(true)}
                     onMouseLeave={() => setIsHovered3(false)}
                 >
-                    <a href="#services">SERVICES</a>
+                    <NavLink to="#services" activeClassName="active">SERVICES</NavLink>
                 </li>
 
                 <li
                     className='text-sm mt-1 font-bold rounded-xl'
                     style={{
                         color: isHovered4 ? theme.ui : ``,
-                        background: isHovered4 ? theme.bg : ``,
+                        // backgroundColor: isHovered4 ? isLightTheme ? `ButtonShadow` : `` : ``,
                         fontSize: isHovered4 ? `16px` : ``,
                         // textDecoration: 'underline',
                         // textDecorationColor: theme.ui
@@ -87,14 +88,14 @@ function Sidebar() {
                     onMouseEnter={() => setIsHovered4(true)}
                     onMouseLeave={() => setIsHovered4(false)}
                 >
-                    <a href="#skills">SKILLS</a>
+                    <NavLink to="#skills" activeClassName="active">SKILLS</NavLink>
                 </li>
 
                 <li
                     className='text-sm mt-1 font-bold rounded-xl'
                     style={{
                         color: isHovered5 ? theme.ui : ``,
-                        background: isHovered5 ? theme.bg : ``,
+                        // backgroundColor: isHovered5 ? isLightTheme ? `ButtonShadow` : `` : ``,
                         fontSize: isHovered5 ? `16px` : ``,
                         // textDecoration: 'underline',
                         // textDecorationColor: theme.ui
@@ -102,14 +103,14 @@ function Sidebar() {
                     onMouseEnter={() => setIsHovered5(true)}
                     onMouseLeave={() => setIsHovered5(false)}
                 >
-                    <a href="#education">EDUCATION</a>
+                    <NavLink to="#education" activeClassName="active">EDUCATION</NavLink>
                 </li>
 
                 <li
                     className='text-sm mt-1 font-bold rounded-xl'
                     style={{
                         color: isHovered6 ? theme.ui : ``,
-                        background: isHovered6 ? theme.bg : ``,
+                        // backgroundColor: isHovered6 ? isLightTheme ? `ButtonShadow` : `` : ``,
                         fontSize: isHovered6 ? `16px` : ``,
                         // textDecoration: 'underline',
                         // textDecorationColor: theme.ui
@@ -117,14 +118,14 @@ function Sidebar() {
                     onMouseEnter={() => setIsHovered6(true)}
                     onMouseLeave={() => setIsHovered6(false)}
                 >
-                    <a href="#experience">EXPERIENCE</a>
+                    <NavLink to="#experience" activeClassName="active">EXPERIENCE</NavLink>
                 </li>
 
                 <li
                     className='text-sm mt-1 font-bold rounded-xl'
                     style={{
                         color: isHovered7 ? theme.ui : ``,
-                        background: isHovered7 ? theme.bg : ``,
+                        // backgroundColor: isHovered7 ? isLightTheme ? `ButtonShadow` : `` : ``,
                         fontSize: isHovered7 ? `16px` : ``,
                         // textDecoration: 'underline',
                         // textDecorationColor: theme.ui
@@ -132,14 +133,14 @@ function Sidebar() {
                     onMouseEnter={() => setIsHovered7(true)}
                     onMouseLeave={() => setIsHovered7(false)}
                 >
-                    <a href="#work">WORK</a>
+                    <NavLink to="#work" activeClassName="active">WORK</NavLink>
                 </li>
 
                 <li
                     className='text-sm mt-1 font-bold rounded-xl'
                     style={{
                         color: isHovered8 ? theme.ui : ``,
-                        background: isHovered8 ? theme.bg : ``,
+                        // backgroundColor: isHovered8 ? isLightTheme ? `ButtonShadow` : `` : ``,
                         fontSize: isHovered8 ? `16px` : ``,
                         // textDecoration: 'underline',
                         // textDecorationColor: theme.ui
@@ -147,14 +148,14 @@ function Sidebar() {
                     onMouseEnter={() => setIsHovered8(true)}
                     onMouseLeave={() => setIsHovered8(false)}
                 >
-                    <a href="#blog">BLOG</a>
+                    <NavLink to="#blog" activeClassName="active">BLOG</NavLink>
                 </li>
 
                 <li
                     className='text-sm mt-1 font-bold rounded-xl'
                     style={{
                         color: isHovered9 ? theme.ui : ``,
-                        background: isHovered9 ? theme.bg : ``,
+                        // backgroundColor: isHovered9 ? isLightTheme ? `ButtonShadow` : `` : ``,
                         fontSize: isHovered9 ? `16px` : ``,
                         // textDecoration: 'underline',
                         // textDecorationColor: theme.ui
@@ -162,7 +163,7 @@ function Sidebar() {
                     onMouseEnter={() => setIsHovered9(true)}
                     onMouseLeave={() => setIsHovered9(false)}
                 >
-                    <a href="#contact">CONTACT</a>
+                    <NavLink to="#contact" activeClassName="active">CONTACT</NavLink>
                 </li>
 
             </ul>
