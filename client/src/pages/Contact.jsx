@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { AiFillGithub, AiOutlineInstagram, AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
 import { IoLocationOutline } from 'react-icons/io5'
-import { FaXTwitter } from 'react-icons/fa6'
+import { FaMedium, FaXTwitter } from 'react-icons/fa6'
 import { FiFacebook, FiLinkedin } from 'react-icons/fi'
 import { LiaTelegramPlane } from 'react-icons/lia'
 import { PiWhatsappLogoDuotone, PiWhatsappLogoLight } from 'react-icons/pi'
@@ -99,6 +99,9 @@ function Contact() {
                         </FadeUp>
                         <FadeUp>
                             <a className="github" href='https://github.com/Emmy-Akintz/'><AiFillGithub /></a>
+                        </FadeUp>
+                        <FadeUp>
+                            <a className="medium" href='https://medium.com/@emzyakints2005'><FaMedium /> /></a>
                         </FadeUp>
                     </div>
                     <br />
