@@ -101,7 +101,7 @@ function Contact() {
                             <a className="github" href='https://github.com/Emmy-Akintz/'><AiFillGithub /></a>
                         </FadeUp>
                         <FadeUp>
-                            <a className="medium" href='https://medium.com/@emzyakints2005'><FaMedium /> /></a>
+                            <a className="medium" href='https://medium.com/@emzyakints2005'><FaMedium /></a>
                         </FadeUp>
                     </div>
                     <br />
