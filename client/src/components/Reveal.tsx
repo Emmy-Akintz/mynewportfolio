@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useContext } from 'react'
-import { motion, useInView, useAnimation, useScroll } from 'framer-motion'
+import { motion, useInView, useAnimation } from 'framer-motion'
 import { ThemeContext } from '../contexts/ThemeContext'
 
 interface Props {
