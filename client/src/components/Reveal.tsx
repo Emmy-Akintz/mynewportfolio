@@ -9,22 +9,19 @@ interface Props {
 
 export const FadeUp = ({ children, width = "fit-content" }: Props) => {
     const ref = useRef(null)
-    const isInView = useInView(ref, { once: true })
+    const isInView = useInView(ref, { once: false })
 
     const mainControls = useAnimation()
     const slideControls = useAnimation()
 
-    useEffect(() => {
-        console.log(isInView);
-        
+    useEffect(() => {        
         if (isInView) {
             mainControls.start("visible")
             slideControls.start("visible")
-        } 
-        // else if (!isInView) {
-        //     mainControls.stop()
-        //     slideControls.stop()
-        // }
+        } else {
+            mainControls.start("hidden")
+            slideControls.start("hidden")
+        }
     }, [isInView])
 
     const { isLightTheme, light, dark } = useContext(ThemeContext)
@@ -67,7 +64,7 @@ export const FadeUp = ({ children, width = "fit-content" }: Props) => {
 
 export const SlideInLeft = ({ children, width = "fit-content" }: Props) => {
     const ref = useRef(null)
-    const isInView = useInView(ref, { once: true })
+    const isInView = useInView(ref, { once: false })
 
     const mainControls = useAnimation()
     const slideControls = useAnimation()
@@ -76,11 +73,10 @@ export const SlideInLeft = ({ children, width = "fit-content" }: Props) => {
         if (isInView) {
             mainControls.start("visible")
             slideControls.start("visible")
-        } 
-        // else if (!isInView) {
-        //     mainControls.stop()
-        //     slideControls.stop()
-        // }
+        } else {
+            mainControls.start("hidden")
+            slideControls.start("hidden")
+        }
     }, [isInView])
 
     const { isLightTheme, light, dark } = useContext(ThemeContext)
@@ -123,7 +119,7 @@ export const SlideInLeft = ({ children, width = "fit-content" }: Props) => {
 
 export const SlideInRight = ({ children, width = "fit-content" }: Props) => {
     const ref = useRef(null)
-    const isInView = useInView(ref, { once: true })
+    const isInView = useInView(ref, { once: false })
 
     const mainControls = useAnimation()
     const slideControls = useAnimation()
@@ -132,11 +128,10 @@ export const SlideInRight = ({ children, width = "fit-content" }: Props) => {
         if (isInView) {
             mainControls.start("visible")
             slideControls.start("visible")
-        } 
-        // else if (!isInView) {
-        //     mainControls.stop()
-        //     slideControls.stop()
-        // }
+        } else {
+            mainControls.start("hidden")
+            slideControls.start("hidden")
+        }
     }, [isInView])
 
     const { isLightTheme, light, dark } = useContext(ThemeContext)
