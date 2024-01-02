@@ -15,10 +15,16 @@ export const FadeUp = ({ children, width = "fit-content" }: Props) => {
     const slideControls = useAnimation()
 
     useEffect(() => {
+        console.log(isInView);
+        
         if (isInView) {
             mainControls.start("visible")
             slideControls.start("visible")
-        }
+        } 
+        // else if (!isInView) {
+        //     mainControls.stop()
+        //     slideControls.stop()
+        // }
     }, [isInView])
 
     const { isLightTheme, light, dark } = useContext(ThemeContext)
@@ -70,7 +76,11 @@ export const SlideInLeft = ({ children, width = "fit-content" }: Props) => {
         if (isInView) {
             mainControls.start("visible")
             slideControls.start("visible")
-        }
+        } 
+        // else if (!isInView) {
+        //     mainControls.stop()
+        //     slideControls.stop()
+        // }
     }, [isInView])
 
     const { isLightTheme, light, dark } = useContext(ThemeContext)
@@ -122,7 +132,11 @@ export const SlideInRight = ({ children, width = "fit-content" }: Props) => {
         if (isInView) {
             mainControls.start("visible")
             slideControls.start("visible")
-        }
+        } 
+        // else if (!isInView) {
+        //     mainControls.stop()
+        //     slideControls.stop()
+        // }
     }, [isInView])
 
     const { isLightTheme, light, dark } = useContext(ThemeContext)
