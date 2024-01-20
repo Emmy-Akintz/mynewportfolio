@@ -93,12 +93,12 @@ function Read() {
                     </div>
                     <SlideInRight>
                         <h1 className="font-bold text-sm">
-                            MY BLOG
+                            TIME IN ITSELF
                         </h1>
                     </SlideInRight>
                     <SlideInRight>
                         <p className="text-justify w-[200px]">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, obcaecati.
+                            Coming soon...
                         </p>
                     </SlideInRight>
                     <br />
