@@ -98,7 +98,7 @@ function Read() {
                     </SlideInRight>
                     <SlideInRight>
                         <p className="text-justify w-[200px]">
-                            Coming soon...
+                            You will struggle to understand how time flies when you do not utilize it. As we all must've heard, <em className='font-bold'>"time is costly and precious".</em>
                         </p>
                     </SlideInRight>
                     <br />
