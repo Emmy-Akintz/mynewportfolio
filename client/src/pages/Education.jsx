@@ -53,7 +53,8 @@ function Education() {
                     </div>
                     <div className={option3 ? "block border mt-1 p-2 rounded w-[280px] md:w-[650px] lg:w-[610px]" : "hidden"}>
                         I started my training at JIT solutions, Akure 2021 October and completed it December 2022. During all my time there I created a couple of projects.
-                        <a href="https://jitsolutionsng.com/verification.php?id=635" style={{ color: theme.ui }}> Click to see my proof of certification</a>
+                        <br />
+                        <a href="https://jitsolutionsng.com/verification.php?id=635" style={{ color: theme.ui }} className='underline'>Click to see my proof of certification</a>
                     </div>
                 </div>
             </SlideInLeft>
@@ -65,7 +66,7 @@ function Education() {
                         <AiOutlineMinus className={option4 ? '' : 'hidden'} />
                     </div>
                     <div className={option4 ? "block border mt-1 p-2 rounded w-[280px] md:w-[650px] lg:w-[610px]" : "hidden"}>
-                        I started my education at USA (Universal School Akure) and was there till primary four after which I transfered to Fullness Of God, Akure, Ondo State for my primary 5 education.
+                        I started my education at USA (Universal School Akure) and was there till primary four after which I transfered to <a href="https://fullnessofgod.com.ng/" style={{ color: theme.ui }} className='underline'>Fullness Of God, Akure, Ondo State</a> for my primary 5 education. After which I went to high school.
                     </div>
                 </div>
             </SlideInRight>
