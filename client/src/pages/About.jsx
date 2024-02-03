@@ -21,7 +21,10 @@ function About() {
       <br />
       <div className="p-12 text-black w-[280px] md:w-[650px] lg:w-[610px]" style={{ background: theme.ui }}>
         <FadeUp>
-          <p className='font-bold'>I am happy to let you know <br /> that I've done 10 projects successfully!</p>
+          <p className='font-bold'>I am happy to let you know <br /> that I've done 2 projects successfully!</p>
+          <p className='font-bold'>Currently working on the 3rd.</p>
+          <br />
+          <a href="https://github.com/Emmy-Akintz/larry-pat-foods" className='border border-black px-2'>CHECK IT OUT</a>
         </FadeUp>
         <br />
         <FadeUp>

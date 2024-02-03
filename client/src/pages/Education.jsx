@@ -9,6 +9,7 @@ function Education() {
     const [option1, setOption1] = useState(true)
     const [option2, setOption2] = useState(false)
     const [option3, setOption3] = useState(false)
+    const [option4, setOption4] = useState(false)
     return (
         <div id='education' className='mt-12'>
             <FadeUp>
@@ -43,7 +44,7 @@ function Education() {
                     </div>
                 </div>
             </SlideInRight>
-            <FadeUp>
+            <SlideInLeft>
                 <div onClick={() => setOption3(!option3)} className="block mt-1">
                     <div className="w-[280px] md:w-[650px] lg:w-[610px] p-2 rounded flex justify-between items-center cursor-pointer" style={{ background: theme.ui }}>
                         <p className="text-sm">WEB DEVELOPMENT TRAINING</p>
@@ -55,7 +56,19 @@ function Education() {
                         <a href="https://jitsolutionsng.com/verification.php?id=635" style={{ color: theme.ui }}> Click to see my proof of certification</a>
                     </div>
                 </div>
-            </FadeUp>
+            </SlideInLeft>
+            <SlideInRight>
+                <div onClick={() => setOption4(!option4)} className="block mt-1">
+                    <div className="w-[280px] md:w-[650px] lg:w-[610px] p-2 rounded flex justify-between items-center cursor-pointer" style={{ background: theme.ui }}>
+                        <p className="text-sm">PRIMARY SCHOOL EDUCATION</p>
+                        <AiOutlinePlus className={option4 ? 'hidden' : ''} />
+                        <AiOutlineMinus className={option4 ? '' : 'hidden'} />
+                    </div>
+                    <div className={option4 ? "block border mt-1 p-2 rounded w-[280px] md:w-[650px] lg:w-[610px]" : "hidden"}>
+                        I started my education at USA (Universal School Akure) and was there till primary four after which I transfered to Fullness Of God, Akure, Ondo State for my primary 5 education.
+                    </div>
+                </div>
+            </SlideInRight>
         </div>
     )
 }
