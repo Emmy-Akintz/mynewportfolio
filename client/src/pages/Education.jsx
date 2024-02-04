@@ -40,7 +40,7 @@ function Education() {
                         <AiOutlineMinus className={option2 ? '' : 'hidden'} />
                     </div>
                     <div className={option2 ? "block border mt-1 p-2 rounded w-[280px] md:w-[650px] lg:w-[610px]" : "hidden"}>
-                        I finished my secondary school education at <a href="https://www.nnssimeri.com/" style={{ color: theme.ui}} className='underline'>Nigerian Navy Secondary School, Imeri, Ondo State, Nigeria</a> . My favourite subjects then were mathematics, physics, further mathematics and technical drawing (I wanted to be an engineer 😅).
+                        I finished my secondary school education at <a href="https://www.nnssimeri.com/" style={{ color: theme.ui }} className='underline'>Nigerian Navy Secondary School, Imeri, Ondo State, Nigeria</a> . My favourite subjects then were mathematics, physics, further mathematics and technical drawing (I wanted to be an engineer 😅).
                     </div>
                 </div>
             </SlideInRight>
