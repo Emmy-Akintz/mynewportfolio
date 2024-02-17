@@ -40,7 +40,7 @@ function AHGITWT() {
             </SlideInLeft>
             <SlideInRight>
                 <p className="mt-[30px]">
-                    Many a times, anger is caused by uncertainty. A man living his life without a purpose is definitely uncertain. A little scenerio, humans in a sense are a representation of network. Say for example, every person on average should know an average of 1000 people in his of her life at least well enough to talk to them. That being the case, every individual is one step from influencing a million and two steps away from influencing a billion and so on.
+                    Many a times, anger is caused by uncertainty. A man living his life without a purpose is definitely uncertain. A little scenario, humans in a sense are a representation of network. Say for example, every person on average should know an average of 1000 people in his of her life at least well enough to talk to them. That being the case, every individual is one step from influencing a million and two steps away from influencing a billion and so on.
                 </p>
             </SlideInRight>
             <SlideInLeft>
