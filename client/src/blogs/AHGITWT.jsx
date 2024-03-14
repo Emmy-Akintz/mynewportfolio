@@ -29,7 +29,7 @@ function AHGITWT() {
             </SlideInLeft>
             {/* BLOG BODY */}
             <FadeUp>
-                <h1 className="mt-[100px] font-bold text-4xl text-white-200">
+                <h1 className="mt-[100px] font-bold text-2xl md:text-3xl lg:text-4xl text-white-200">
                     ACTIONS HAVE GREATER IMPACTS THAN WE THINK
                 </h1>
             </FadeUp>
