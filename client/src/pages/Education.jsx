@@ -62,13 +62,13 @@ function Education() {
             <br />
             <SlideInLeft>
                 <div onClick={() => {
-                    setOption1(!option1)
+                    setOption1(!option1);
                     if (option1 === false) {
-                        setOption(1)
+                        setOption(1);
                     } else {
-                        setOption2(false)
-                        setOption3(false)
-                        setOption4(false)
+                        setOption2(false);
+                        setOption3(false);
+                        setOption4(false);
                     }
                 }} className="block">
                     <div className="w-[280px] md:w-[650px] lg:w-[610px] p-2 rounded flex justify-between items-center cursor-pointer" style={{ background: theme.ui }}>
@@ -76,7 +76,7 @@ function Education() {
                         <AiOutlinePlus className={option1 ? 'hidden' : ''} />
                         <AiOutlineMinus className={option1 ? '' : 'hidden'} />
                     </div>
-                    <div className={option1 ? "border p-2 rounded w-[280px] md:w-[650px] lg:w-[610px] mt-1" : "hidden"}>
+                    <div className={`${option1 ? "border p-2 rounded w-[280px] md:w-[650px] lg:w-[610px] mt-1 transition-opacity duration-500 ease-in-out" : "hidden"}`} style={{ opacity: option1 ? 1 : 0 }}>
                         I am currently studying computer science at Landmark University, Omu Aran, Kwara State, Nigeria. I will get my degree by the year 2025.
                     </div>
                 </div>
