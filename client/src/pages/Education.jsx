@@ -76,7 +76,7 @@ function Education() {
                         <AiOutlinePlus className={option1 ? 'hidden' : ''} />
                         <AiOutlineMinus className={option1 ? '' : 'hidden'} />
                     </div>
-                    <div className={`${option1 ? "border p-2 rounded w-[280px] md:w-[650px] lg:w-[610px] mt-1 transition-opacity duration-500 ease-in-out" : "hidden"}`} style={{ opacity: option1 ? 1 : 0 }}>
+                    <div className={`${option1 ? "border p-2 rounded w-[280px] md:w-[650px] lg:w-[610px] mt-1 transition-opacity duration-500 ease-in-out" : "h-0"}`} style={{ opacity: option1 ? 1 : 0 }}>
                         I am currently studying computer science at Landmark University, Omu Aran, Kwara State, Nigeria. I will get my degree by the year 2025.
                     </div>
                 </div>
@@ -94,7 +94,7 @@ function Education() {
                         <AiOutlinePlus className={option2 ? 'hidden' : ''} />
                         <AiOutlineMinus className={option2 ? '' : 'hidden'} />
                     </div>
-                    <div className={option2 ? "block border mt-1 p-2 rounded w-[280px] md:w-[650px] lg:w-[610px]" : "hidden"}>
+                    <div className={`${option2 ? "border p-2 rounded w-[280px] md:w-[650px] lg:w-[610px] mt-1 transition-opacity duration-500 ease-in-out" : "h-0"}`} style={{ opacity: option2 ? 1 : 0 }}>
                         I finished my secondary school education at <a href="https://www.nnssimeri.com/" style={{ color: theme.ui }} className='underline'>Nigerian Navy Secondary School, Imeri, Ondo State, Nigeria</a> . My favourite subjects then were mathematics, physics, further mathematics and technical drawing (I wanted to be an engineer 😅).
                     </div>
                 </div>
@@ -112,7 +112,7 @@ function Education() {
                         <AiOutlinePlus className={option3 ? 'hidden' : ''} />
                         <AiOutlineMinus className={option3 ? '' : 'hidden'} />
                     </div>
-                    <div className={option3 ? "block border mt-1 p-2 rounded w-[280px] md:w-[650px] lg:w-[610px]" : "hidden"}>
+                    <div className={`${option3 ? "border p-2 rounded w-[280px] md:w-[650px] lg:w-[610px] mt-1 transition-opacity duration-500 ease-in-out" : "h-0"}`} style={{ opacity: option3 ? 1 : 0 }}>
                         I started my training at JIT solutions, Akure 2021 October and completed it December 2022. During all my time there I created a couple of projects.
                         <br />
                         <a href="https://jitsolutionsng.com/verification.php?id=635" style={{ color: theme.ui }} className='underline'>Click to see my proof of certification</a>
@@ -132,7 +132,7 @@ function Education() {
                         <AiOutlinePlus className={option4 ? 'hidden' : ''} />
                         <AiOutlineMinus className={option4 ? '' : 'hidden'} />
                     </div>
-                    <div className={option4 ? "block border mt-1 p-2 rounded w-[280px] md:w-[650px] lg:w-[610px]" : "hidden"}>
+                    <div className={`${option4 ? "border p-2 rounded w-[280px] md:w-[650px] lg:w-[610px] mt-1 transition-opacity duration-500 ease-in-out" : "h-0"}`} style={{ opacity: option4 ? 1 : 0 }}>
                         I started my education at USA (Universal School Akure) and was there till primary four after which I transfered to <a href="https://fullnessofgod.com.ng/" style={{ color: theme.ui }} className='underline'>Fullness Of God, Akure, Ondo State</a> for my primary 5 education. After which I went to high school.
                     </div>
                 </div>
