@@ -74,6 +74,25 @@ function Work() {
                         </div>
                     </div>
                 </SlideInLeft>
+                <SlideInRight>
+                    <div className="card w-[280px] my-4 p-4 rounded" style={{ background: theme.ui }}>
+                        <iframe src='https://emmy-currency-converter.netlify.app/' title='Hackathon Page' width='100%' className='mb-4'></iframe>
+                        <p className="font-bold">WORK 04</p>
+                        <p className="text-sm">CURRENCY CONVERTER</p>
+                        <br />
+                        <div className="flex justify-between w-[30%]">
+                            {/* <a className="rounded-xl px-2 py-1" href='/' style={{ background: theme.bgg }}>
+                            <AiOutlineShareAlt />
+                        </a> */}
+                            <a className="rounded-xl px-2 py-1" href='https://emmy-currency-converter.netlify.app/' style={{ background: theme.bgg }}>
+                                <AiOutlineEye />
+                            </a>
+                            <a className="rounded-xl px-2 py-1" href='https://github.com/Emmy-Akintz/currency-converter' style={{ background: theme.bgg }}>
+                                <AiFillGithub />
+                            </a>
+                        </div>
+                    </div>
+                </SlideInRight>
             </div>
         </div>
     )
