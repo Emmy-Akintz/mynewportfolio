@@ -59,10 +59,10 @@ function Skills() {
                     <div className="block w-[280px] my-4">
                         <div className="flex justify-between">
                             <p className="">Typescript</p>
-                            <p className="">30%</p>
+                            <p className="">75%</p>
                         </div>
                         <div className="w-[100%] h-[10px] rounded-2xl overflow-hidden" style={{ background: theme.bgg }}>
-                            <div className="w-[30%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
+                            <div className="w-[75%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
                         </div>
                     </div>
                 </SlideInRight>
@@ -114,10 +114,10 @@ function Skills() {
                     <div className="block w-[280px] my-4">
                         <div className="flex justify-between">
                             <p className="">MongoDB</p>
-                            <p className="">60%</p>
+                            <p className="">70%</p>
                         </div>
                         <div className="w-[100%] h-[10px] rounded-2xl overflow-hidden" style={{ background: theme.bgg }}>
-                            <div className="w-[60%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
+                            <div className="w-[70%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
                         </div>
                     </div>
                 </SlideInLeft>
@@ -125,10 +125,10 @@ function Skills() {
                     <div className="block w-[280px] my-4">
                         <div className="flex justify-between">
                             <p className="">ExpressJS</p>
-                            <p className="">60%</p>
+                            <p className="">70%</p>
                         </div>
                         <div className="w-[100%] h-[10px] rounded-2xl overflow-hidden" style={{ background: theme.bgg }}>
-                            <div className="w-[60%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
+                            <div className="w-[70%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
                         </div>
                     </div>
                 </SlideInRight>
@@ -147,10 +147,10 @@ function Skills() {
                     <div className="block w-[280px] my-4">
                         <div className="flex justify-between">
                             <p className="">NodeJS</p>
-                            <p className="">60%</p>
+                            <p className="">70%</p>
                         </div>
                         <div className="w-[100%] h-[10px] rounded-2xl overflow-hidden" style={{ background: theme.bgg }}>
-                            <div className="w-[60%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
+                            <div className="w-[70%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
                         </div>
                     </div>
                 </SlideInRight>
@@ -165,6 +165,39 @@ function Skills() {
                         </div>
                     </div>
                 </SlideInLeft>
+                <SlideInRight>
+                    <div className="block w-[280px] my-4">
+                        <div className="flex justify-between">
+                            <p className="">NextJs</p>
+                            <p className="">80%</p>
+                        </div>
+                        <div className="w-[100%] h-[10px] rounded-2xl overflow-hidden" style={{ background: theme.bgg }}>
+                            <div className="w-[80%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
+                        </div>
+                    </div>
+                </SlideInRight>
+                <SlideInLeft>
+                    <div className="block w-[280px] my-4">
+                        <div className="flex justify-between">
+                            <p className="">C#</p>
+                            <p className="">40%</p>
+                        </div>
+                        <div className="w-[100%] h-[10px] rounded-2xl overflow-hidden" style={{ background: theme.bgg }}>
+                            <div className="w-[40%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
+                        </div>
+                    </div>
+                </SlideInLeft>
+                <SlideInRight>
+                    <div className="block w-[280px] my-4">
+                        <div className="flex justify-between">
+                            <p className="">C++</p>
+                            <p className="">40%</p>
+                        </div>
+                        <div className="w-[100%] h-[10px] rounded-2xl overflow-hidden" style={{ background: theme.bgg }}>
+                            <div className="w-[40%] h-[100%] rounded-2xl" style={{ background: theme.ui }}></div>
+                        </div>
+                    </div>
+                </SlideInRight>
                 {/* <SlideInRight>
                     <div className="block w-[280px] my-4">
                         <div className="flex justify-between">
