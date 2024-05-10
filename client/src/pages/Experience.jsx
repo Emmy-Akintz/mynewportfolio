@@ -26,7 +26,7 @@ function Experience() {
         </div>
         <div className="flex justify-between w-[100%]">
           <SlideInLeft>
-            <h1 className="font-bold" style={{ color: theme.ui }}>Website Developer</h1>
+            <h1 className="font-bold" style={{ color: theme.ui }}>Fullstack Website Developer</h1>
           </SlideInLeft>
           <SlideInRight>
             <h1 className="">Nigeria</h1>
