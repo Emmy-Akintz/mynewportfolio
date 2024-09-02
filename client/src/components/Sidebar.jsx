@@ -3,7 +3,7 @@ import { ThemeContext } from '../contexts/ThemeContext'
 import image from '../assets/CV-pic.jpg'
 import { NavLink } from 'react-router-dom'
 
-function Sidebar() {
+function Sidebar(props) {
 
     const { isLightTheme, light, dark } = useContext(ThemeContext)
     const theme = isLightTheme ? light : dark
@@ -30,11 +30,11 @@ function Sidebar() {
                 IN NIGERIA
             </p>
             <ul className='mt-4'>
-
+                
                 <li
                     className='text-sm mt-1 font-bold rounded-xl'
                     style={{
-                        color: isHovered1 ? theme.ui : ``,
+                        color: props.activeSection === 'home' && theme.ui,
                         // backgroundColor: isHovered1 ? isLightTheme ? `ButtonShadow` : `` : ``,
                         fontSize: isHovered1 ? `16px` : ``,
                         // textDecoration: 'underline',
@@ -43,13 +43,13 @@ function Sidebar() {
                     onMouseEnter={() => setIsHovered1(true)}
                     onMouseLeave={() => setIsHovered1(false)}
                 >
-                    <NavLink to="#home" activeClassName="active">HOME</NavLink>
+                    <a href="#home" activeClassName="active">HOME</a>
                 </li>
 
                 <li
                     className='text-sm mt-1 font-bold rounded-xl'
                     style={{
-                        color: isHovered2 ? theme.ui : ``,
+                        color: props.activeSection === 'about' && theme.ui,
                         // backgroundColor: isHovered2 ? isLightTheme ? `ButtonShadow` : `` : ``,
                         fontSize: isHovered2 ? `16px` : ``,
                         // textDecoration: 'underline',
@@ -58,13 +58,13 @@ function Sidebar() {
                     onMouseEnter={() => setIsHovered2(true)}
                     onMouseLeave={() => setIsHovered2(false)}
                 >
-                    <NavLink to="#about" activeClassName="active">ABOUT</NavLink>
+                    <a href="#about" activeClassName="active">ABOUT</a>
                 </li>
 
                 <li
                     className='text-sm mt-1 font-bold rounded-xl'
                     style={{
-                        color: isHovered3 ? theme.ui : ``,
+                        color: props.activeSection === 'services' && theme.ui,
                         // backgroundColor: isHovered3 ? isLightTheme ? `ButtonShadow` : `` : ``,
                         fontSize: isHovered3 ? `16px` : ``,
                         // textDecoration: 'underline',
@@ -73,13 +73,13 @@ function Sidebar() {
                     onMouseEnter={() => setIsHovered3(true)}
                     onMouseLeave={() => setIsHovered3(false)}
                 >
-                    <NavLink to="#services" activeClassName="active">SERVICES</NavLink>
+                    <a href="#services" activeClassName="active">SERVICES</a>
                 </li>
 
                 <li
                     className='text-sm mt-1 font-bold rounded-xl'
                     style={{
-                        color: isHovered4 ? theme.ui : ``,
+                        color: props.activeSection === 'skills' && theme.ui,
                         // backgroundColor: isHovered4 ? isLightTheme ? `ButtonShadow` : `` : ``,
                         fontSize: isHovered4 ? `16px` : ``,
                         // textDecoration: 'underline',
@@ -88,13 +88,13 @@ function Sidebar() {
                     onMouseEnter={() => setIsHovered4(true)}
                     onMouseLeave={() => setIsHovered4(false)}
                 >
-                    <NavLink to="#skills" activeClassName="active">SKILLS</NavLink>
+                    <a href="#skills" activeClassName="active">SKILLS</a>
                 </li>
 
                 <li
                     className='text-sm mt-1 font-bold rounded-xl'
                     style={{
-                        color: isHovered5 ? theme.ui : ``,
+                        color: props.activeSection === 'education' && theme.ui,
                         // backgroundColor: isHovered5 ? isLightTheme ? `ButtonShadow` : `` : ``,
                         fontSize: isHovered5 ? `16px` : ``,
                         // textDecoration: 'underline',
@@ -103,13 +103,13 @@ function Sidebar() {
                     onMouseEnter={() => setIsHovered5(true)}
                     onMouseLeave={() => setIsHovered5(false)}
                 >
-                    <NavLink to="#education" activeClassName="active">EDUCATION</NavLink>
+                    <a href="#education" activeClassName="active">EDUCATION</a>
                 </li>
 
                 <li
                     className='text-sm mt-1 font-bold rounded-xl'
                     style={{
-                        color: isHovered6 ? theme.ui : ``,
+                        color: props.activeSection === 'experience' && theme.ui,
                         // backgroundColor: isHovered6 ? isLightTheme ? `ButtonShadow` : `` : ``,
                         fontSize: isHovered6 ? `16px` : ``,
                         // textDecoration: 'underline',
@@ -118,13 +118,13 @@ function Sidebar() {
                     onMouseEnter={() => setIsHovered6(true)}
                     onMouseLeave={() => setIsHovered6(false)}
                 >
-                    <NavLink to="#experience" activeClassName="active">EXPERIENCE</NavLink>
+                    <a href="#experience" activeClassName="active">EXPERIENCE</a>
                 </li>
 
                 <li
                     className='text-sm mt-1 font-bold rounded-xl'
                     style={{
-                        color: isHovered7 ? theme.ui : ``,
+                        color: props.activeSection === 'work' && theme.ui,
                         // backgroundColor: isHovered7 ? isLightTheme ? `ButtonShadow` : `` : ``,
                         fontSize: isHovered7 ? `16px` : ``,
                         // textDecoration: 'underline',
@@ -133,13 +133,13 @@ function Sidebar() {
                     onMouseEnter={() => setIsHovered7(true)}
                     onMouseLeave={() => setIsHovered7(false)}
                 >
-                    <NavLink to="#work" activeClassName="active">WORK</NavLink>
+                    <a href="#work" activeClassName="active">WORK</a>
                 </li>
 
                 <li
                     className='text-sm mt-1 font-bold rounded-xl'
                     style={{
-                        color: isHovered8 ? theme.ui : ``,
+                        color: props.activeSection === 'blog' && theme.ui,
                         // backgroundColor: isHovered8 ? isLightTheme ? `ButtonShadow` : `` : ``,
                         fontSize: isHovered8 ? `16px` : ``,
                         // textDecoration: 'underline',
@@ -148,13 +148,13 @@ function Sidebar() {
                     onMouseEnter={() => setIsHovered8(true)}
                     onMouseLeave={() => setIsHovered8(false)}
                 >
-                    <NavLink to="#blog" activeClassName="active">BLOG</NavLink>
+                    <a href="#blog" activeClassName="active">BLOG</a>
                 </li>
 
                 <li
                     className='text-sm mt-1 font-bold rounded-xl'
                     style={{
-                        color: isHovered9 ? theme.ui : ``,
+                        color: props.activeSection === 'contact' && theme.ui,
                         // backgroundColor: isHovered9 ? isLightTheme ? `ButtonShadow` : `` : ``,
                         fontSize: isHovered9 ? `16px` : ``,
                         // textDecoration: 'underline',
@@ -163,7 +163,7 @@ function Sidebar() {
                     onMouseEnter={() => setIsHovered9(true)}
                     onMouseLeave={() => setIsHovered9(false)}
                 >
-                    <NavLink to="#contact" activeClassName="active">CONTACT</NavLink>
+                    <a href="#contact" activeClassName="active">CONTACT</a>
                 </li>
 
             </ul>

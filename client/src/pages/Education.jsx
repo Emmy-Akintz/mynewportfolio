@@ -89,7 +89,7 @@ function Education() {
                         setOption1(false)
                     }
                 }} className="block mt-1">
-                    <div className="w-[280px] w-[280px] md:w-[650px] lg:w-[610px] p-2 rounded flex justify-between items-center cursor-pointer" style={{ background: theme.ui }}>
+                    <div className="w-[280px] md:w-[650px] lg:w-[610px] p-2 rounded flex justify-between items-center cursor-pointer" style={{ background: theme.ui }}>
                         <p className="text-sm">HIGH SCHOOL SECONDARY EDUCATION</p>
                         <AiOutlinePlus className={option2 ? 'hidden' : ''} />
                         <AiOutlineMinus className={option2 ? '' : 'hidden'} />

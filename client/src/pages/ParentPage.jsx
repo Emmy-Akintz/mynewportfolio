@@ -16,6 +16,7 @@ import { FadeUp } from '../components/Reveal'
 
 function ParentPage() {
   const [sidebar, setSidebar] = useState(false)
+  const [activeSection, setActiveSection] = useState("");
   const { isLightTheme, light, dark } = useContext(ThemeContext)
   const theme = isLightTheme ? light : dark
 
@@ -36,6 +37,48 @@ function ParentPage() {
       document.removeEventListener("scroll", handler)
     }
   })
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // check if there is a new entry
+        // console.log(entry);
+        if (entry?.isIntersecting) setActiveSection(entry.target.id);
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+
+    // observe each section
+    // const refs = document.querySelectorAll("article > section[id]");
+    const refs = document.querySelectorAll("div[id]");
+    // console.log(refs)
+    refs.forEach(ref => {
+      observer.observe(ref);
+    });
+
+    // // Add scroll event listener for in-page navigation
+    // const handleScroll = () => {
+    //     let newActiveSection = null;
+    //     refs.forEach((section) => {
+    //         if (section.getBoundingClientRect().top < window.innerHeight * 0.5) {
+    //         newActiveSection = section.id; // Update immediately
+    //         }
+    //     });
+    //     setActiveSection(newActiveSection!);
+    // };
+
+    // window.addEventListener('scroll', handleScroll);
+
+    // cleanup
+    return () => {
+      refs.forEach(ref => {
+        observer.unobserve(ref);
+      });
+      // window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div
@@ -68,7 +111,7 @@ function ParentPage() {
         className={sidebar ? 'visible absolute' : 'invisible md:invisible lg:visible'} style={{ zIndex: 40 }}
         ref={menuRef}
       >
-        <Sidebar />
+        <Sidebar activeSection={activeSection} />
       </div>
       <div className={`p-12 w-[350px] md:w-[80%] lg:w-[70%] ${sidebar ? 'mix-blend-overlay overflow-hidden' : ''}`}>
         <Intro />

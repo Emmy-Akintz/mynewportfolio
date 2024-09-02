@@ -23,7 +23,7 @@ function Intro() {
             </FadeUp>
             <br />
             <FadeUp>
-                <p className="w-[300px] md:w-[500px] lg:w-[500px] text-justify m-auto lg:ml-0 text-left">
+                <p className="w-[300px] md:w-[500px] lg:w-[500px] m-auto lg:ml-0 text-left">
                     I am a self-motivated full stack web developer (MERN). I love to build fully functioning and client friendly websites.
                 </p>
             </FadeUp>
