@@ -30,6 +30,18 @@ function Services() {
                         </p>
                     </SlideInLeft>
                 </div>
+                <div className="card p-5 w-[280px] mt-20" style={{ borderBottom: `3px solid ${theme.ui}`, boxShadow: `0px -20px 50px 20px ${theme.bgg}` }}>
+                    <SlideInRight className="">
+                        <IconContext.Provider value={{ color: theme.ui }}>
+                            <BiCodeAlt />
+                        </IconContext.Provider>
+                    </SlideInRight>
+                    <SlideInRight>
+                        <p className="mt-4">
+                            Mobile Application Development
+                        </p>
+                    </SlideInRight>
+                </div>
                 {/* <div className="card p-5 w-[280px] mt-20" style={{ borderBottom: `3px solid ${theme.ui}`, boxShadow: `0px -20px 50px 20px ${theme.bgg}` }}>
                     <SlideInRight className="">
                         <IconContext.Provider value={{ color: theme.ui }}>

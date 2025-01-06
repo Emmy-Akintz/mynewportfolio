@@ -26,7 +26,7 @@ function Sidebar(props) {
             <br />
             <h1 className='font-bold text-2xl'>Ayomide Akintan</h1>
             <p className="text-sm">
-                <span className="" style={{ color: theme.ui }}>WEB DEVELOPER </span>
+                <span className="" style={{ color: theme.ui }}>SOFTWARE ENGINEER </span>
                 IN NIGERIA
             </p>
             <ul className='mt-4'>
@@ -167,8 +167,9 @@ function Sidebar(props) {
                 </li>
 
             </ul>
-            <p className="text-sm mt-4">&copy; Copyright 2023.</p>
+            <p className="text-sm mt-4">&copy; Copyright 2025.</p>
             <p className="text-sm mb-10">All rights reserved.</p>
+            <p className="text-xs italic">Initial creation- 2023.</p>
         </div>
     )
 }

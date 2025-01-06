@@ -7,7 +7,7 @@ import { ThemeContext } from '../contexts/ThemeContext'
 
 function Intro() {
 
-    const {isLightTheme, light, dark} = useContext(ThemeContext)
+    const { isLightTheme, light, dark } = useContext(ThemeContext)
     const theme = isLightTheme ? light : dark
 
     return (
@@ -19,12 +19,12 @@ function Intro() {
                 <h1 className='mt-[100px] font-bold text-4xl text-white-200'>Hi</h1>
             </FadeUp>
             <FadeUp>
-                <h1 className="mt-3 font-bold text-3xl lg:text-4xl">I'm Emmy-Akintz</h1>
+                <h1 className="mt-3 font-bold text-3xl lg:text-4xl">I'm Emmy_Akintz</h1>
             </FadeUp>
             <br />
             <FadeUp>
                 <p className="w-[300px] md:w-[500px] lg:w-[500px] m-auto lg:ml-0 text-left">
-                    I am a self-motivated full stack web developer (MERN). I love to build fully functioning and client friendly websites.
+                    I am a self-motivated <b>Software Engineer</b>. I love to build fully functioning and client friendly <i>websites</i> and <i>mobile applications</i>.
                 </p>
             </FadeUp>
             <br />

@@ -10,6 +10,7 @@ function Education() {
     const [option2, setOption2] = useState()
     const [option3, setOption3] = useState()
     const [option4, setOption4] = useState()
+    const [option5, setOption5] = useState()
 
     const [option, setOption] = useState(1)
 
@@ -19,6 +20,7 @@ function Education() {
         setOption2(false);
         setOption3(false);
         setOption4(false);
+        setOption5(false);
     }, []);
 
     switch (option) {
@@ -27,24 +29,35 @@ function Education() {
             setOption2(false)
             setOption3(false)
             setOption4(false)
+            setOption5(false)
             break;
         case 2:
             setOption(false)
             setOption2(true)
             setOption3(false)
             setOption4(false)
+            setOption5(false)
             break
         case 3:
             setOption(false)
             setOption2(false)
             setOption3(true)
             setOption4(false)
+            setOption5(false)
             break
         case 4:
             setOption(false)
             setOption2(false)
             setOption3(false)
             setOption4(true)
+            setOption5(false)
+            break
+        case 5:
+            setOption(false)
+            setOption2(false)
+            setOption3(false)
+            setOption4(false)
+            setOption5(true)
             break
         default:
             break;
@@ -72,7 +85,7 @@ function Education() {
                     }
                 }} className="block">
                     <div className="w-[280px] md:w-[650px] lg:w-[610px] p-2 rounded flex justify-between items-center cursor-pointer" style={{ background: theme.ui }}>
-                        <p className="text-sm">BACHELOR DEGREE OF COMPUTER SCIENCE</p>
+                        <p className="text-md font-bold text-gray-900">BACHELOR DEGREE OF COMPUTER SCIENCE</p>
                         <AiOutlinePlus className={option1 ? 'hidden' : ''} />
                         <AiOutlineMinus className={option1 ? '' : 'hidden'} />
                     </div>
@@ -90,7 +103,7 @@ function Education() {
                     }
                 }} className="block mt-1">
                     <div className="w-[280px] md:w-[650px] lg:w-[610px] p-2 rounded flex justify-between items-center cursor-pointer" style={{ background: theme.ui }}>
-                        <p className="text-sm">HIGH SCHOOL SECONDARY EDUCATION</p>
+                        <p className="text-md font-bold text-gray-900">HIGH SCHOOL SECONDARY EDUCATION</p>
                         <AiOutlinePlus className={option2 ? 'hidden' : ''} />
                         <AiOutlineMinus className={option2 ? '' : 'hidden'} />
                     </div>
@@ -108,7 +121,7 @@ function Education() {
                     }
                 }} className="block mt-1">
                     <div className="w-[280px] md:w-[650px] lg:w-[610px] p-2 rounded flex justify-between items-center cursor-pointer" style={{ background: theme.ui }}>
-                        <p className="text-sm">WEB DEVELOPMENT TRAINING</p>
+                        <p className="text-md font-bold text-gray-900">WEB DEVELOPMENT TRAINING</p>
                         <AiOutlinePlus className={option3 ? 'hidden' : ''} />
                         <AiOutlineMinus className={option3 ? '' : 'hidden'} />
                     </div>
@@ -128,7 +141,7 @@ function Education() {
                     }
                 }} className="block mt-1">
                     <div className="w-[280px] md:w-[650px] lg:w-[610px] p-2 rounded flex justify-between items-center cursor-pointer" style={{ background: theme.ui }}>
-                        <p className="text-sm">PRIMARY SCHOOL EDUCATION</p>
+                        <p className="text-md font-bold text-gray-900">PRIMARY SCHOOL EDUCATION</p>
                         <AiOutlinePlus className={option4 ? 'hidden' : ''} />
                         <AiOutlineMinus className={option4 ? '' : 'hidden'} />
                     </div>
@@ -137,6 +150,24 @@ function Education() {
                     </div>
                 </div>
             </SlideInRight>
+            <SlideInLeft>
+                <div onClick={() => {
+                    setOption5(!option5)
+                    if (option5 === false) {
+                        setOption(5)
+                        setOption1(false)
+                    }
+                }} className="block mt-1">
+                    <div className="w-[280px] md:w-[650px] lg:w-[610px] p-2 rounded flex justify-between items-center cursor-pointer" style={{ background: theme.ui }}>
+                        <p className="text-md font-bold text-gray-900">MOBILE DEVELOPMENT TRAINING</p>
+                        <AiOutlinePlus className={option5 ? 'hidden' : ''} />
+                        <AiOutlineMinus className={option5 ? '' : 'hidden'} />
+                    </div>
+                    <div className={`${option5 ? "border p-2 rounded w-[280px] md:w-[650px] lg:w-[610px] mt-1 transition-opacity duration-500 ease-in-out" : "h-0"}`} style={{ opacity: option5 ? 1 : 0 }}>
+                        I started my mobile development training (React Native) at <a href="https://jitsolutionsng.com" style={{ color: theme.ui }} className='underline'>JIT solutions ng</a> September 2024 where I also learnt web years before. I am done with the training but I should be getting my certification soon.
+                    </div>
+                </div>
+            </SlideInLeft>
         </div>
     )
 }
