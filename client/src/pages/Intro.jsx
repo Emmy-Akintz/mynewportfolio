@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 // import image from '../assets/Emmanuel-2-removebg-preview.png'
-import cv from "../assets/emmy-march-2025-resume.pdf"
+import cv from "../assets/emmy_cv_dec_2025.pdf"
 import { MdDownload } from 'react-icons/md'
 import { FadeUp } from '../components/Reveal'
 import { ThemeContext } from '../contexts/ThemeContext'
