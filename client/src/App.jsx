@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ParentPage from './pages/ParentPage'
-import ThemeContextProvider from './contexts/ThemeContext'
+import ThemeContextProvider from './contexts/ThemeContextProvider'
 import AHGITWT from './blogs/AHGITWT.jsx'
 
 function App() {

@@ -1,62 +1,41 @@
-import React, { useContext } from 'react'
-import { BiCodeAlt, BiPaint } from 'react-icons/bi'
-import { ThemeContext } from '../contexts/ThemeContext'
+import { BiCodeAlt } from 'react-icons/bi'
 import { IconContext } from 'react-icons'
-import { FadeUp, SlideInLeft, SlideInRight } from '../components/Reveal'
+import SectionHeader from '../components/SectionHeader'
+import { SlideInLeft, SlideInRight } from '../components/Reveal'
+import { useTheme } from '../hooks/useTheme'
+import { services } from '../data/portfolio'
 
 function Services() {
-    const { isLightTheme, light, dark } = useContext(ThemeContext)
+  const { theme } = useTheme()
 
-    const theme = isLightTheme ? light : dark
-    return (
-        <div id='services' className='mt-12'>
-            <FadeUp>
-                <h1 className="text-sm">WHAT I DO</h1>
-            </FadeUp>
-            <br />
-            <FadeUp>
-                <h1 className="font-bold">HERE ARE SOME OF MY EXPERTISE</h1>
-            </FadeUp>
-            <div className="md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 w-[280px] md:w-[650px] lg:w-[610px]">
-                <div className="card p-5 w-[280px] mt-20" style={{ borderBottom: `3px solid ${theme.ui}`, boxShadow: `0px -20px 50px 20px ${theme.bgg}` }}>
-                    <SlideInLeft className="">
-                        <IconContext.Provider value={{ color: theme.ui }}>
-                            <BiCodeAlt />
-                        </IconContext.Provider>
-                    </SlideInLeft>
-                    <SlideInLeft>
-                        <p className="mt-4">
-                            Web Development
-                        </p>
-                    </SlideInLeft>
-                </div>
-                <div className="card p-5 w-[280px] mt-20" style={{ borderBottom: `3px solid ${theme.ui}`, boxShadow: `0px -20px 50px 20px ${theme.bgg}` }}>
-                    <SlideInRight className="">
-                        <IconContext.Provider value={{ color: theme.ui }}>
-                            <BiCodeAlt />
-                        </IconContext.Provider>
-                    </SlideInRight>
-                    <SlideInRight>
-                        <p className="mt-4">
-                            Mobile Application Development
-                        </p>
-                    </SlideInRight>
-                </div>
-                {/* <div className="card p-5 w-[280px] mt-20" style={{ borderBottom: `3px solid ${theme.ui}`, boxShadow: `0px -20px 50px 20px ${theme.bgg}` }}>
-                    <SlideInRight className="">
-                        <IconContext.Provider value={{ color: theme.ui }}>
-                            <BiPaint />
-                        </IconContext.Provider>
-                    </SlideInRight>
-                    <SlideInRight>
-                        <p className="mt-4">
-                            Graphic Design
-                        </p>
-                    </SlideInRight>
-                </div> */}
+  return (
+    <section id="services" className="mt-12">
+      <SectionHeader label="WHAT I DO" title="HERE ARE SOME OF MY EXPERTISE" />
+      <div className="md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 w-[280px] md:w-[650px] lg:w-[610px]">
+        {services.map((service, index) => {
+          const Slide = index % 2 === 0 ? SlideInLeft : SlideInRight
+          return (
+            <div
+              key={service.title}
+              className="card p-5 w-[280px] mt-20"
+              style={{
+                borderBottom: `3px solid ${theme.ui}`,
+                boxShadow: `0px -20px 50px 20px ${theme.bgg}`,
+              }}
+            >
+              <Slide>
+                <IconContext.Provider value={{ color: theme.ui }}>
+                  <BiCodeAlt />
+                </IconContext.Provider>
+                <p className="mt-4 font-bold">{service.title}</p>
+                <p className="mt-2 text-sm">{service.description}</p>
+              </Slide>
             </div>
-        </div>
-    )
+          )
+        })}
+      </div>
+    </section>
+  )
 }
 
 export default Services

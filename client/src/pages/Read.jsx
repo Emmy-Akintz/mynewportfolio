@@ -1,6 +1,6 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { BsBoxArrowInUpRight } from 'react-icons/bs'
-import { ThemeContext } from '../contexts/ThemeContext'
+import { ThemeContext } from '../contexts/ThemeContextValue'
 import { AiOutlineComment } from 'react-icons/ai'
 // import blogImage from '../assets/CV-pic.jpg'
 import { FadeUp, SlideInLeft, SlideInRight } from '../components/Reveal'
@@ -10,7 +10,7 @@ function Read() {
     const { isLightTheme, light, dark } = useContext(ThemeContext)
     const theme = isLightTheme ? light : dark
     return (
-        <div id='blog'>
+        <section id='blog'>
             <FadeUp>
                 <h1 className="text-sm">READ</h1>
             </FadeUp>
@@ -111,7 +111,7 @@ function Read() {
                     </SlideInRight>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -1,7 +1,7 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { FadeUp, SlideInLeft, SlideInRight } from '../components/Reveal'
 import ToggleTheme from '../components/ToggleTheme'
-import { ThemeContext } from '../contexts/ThemeContext'
+import { ThemeContext } from '../contexts/ThemeContextValue'
 import { MdArrowBack } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 

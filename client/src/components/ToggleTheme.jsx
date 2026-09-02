@@ -1,23 +1,24 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { MdDarkMode, MdLightMode } from 'react-icons/md'
-import { ThemeContext } from '../contexts/ThemeContext'
+import { ThemeContext } from '../contexts/ThemeContextValue'
 
 function ToggleTheme() {
-    const { toggleTheme, isLightTheme, light, dark } = useContext(ThemeContext)
-    const theme = isLightTheme ? light : dark
-    const changeTheme = () => {
-        if ( isLightTheme ) {
-            toggleTheme(false)
-        } else {
-            toggleTheme(true)
-        }
-    }
-    return (
-        <button className='p-4' onClick={changeTheme}>
-            <div className={isLightTheme ? 'animate-pulse' : 'hidden'}><MdDarkMode /></div>
-            <div className={isLightTheme ? 'hidden' : 'animate-pulse'}><MdLightMode /></div>
-        </button>
-    )
+  const { toggleTheme, isLightTheme } = useContext(ThemeContext)
+
+  const changeTheme = () => {
+    toggleTheme(!isLightTheme)
+  }
+
+  return (
+    <button type="button" className="p-4" onClick={changeTheme} aria-label="Toggle theme">
+      <div className={isLightTheme ? 'animate-pulse' : 'hidden'}>
+        <MdDarkMode />
+      </div>
+      <div className={isLightTheme ? 'hidden' : 'animate-pulse'}>
+        <MdLightMode />
+      </div>
+    </button>
+  )
 }
 
 export default ToggleTheme
